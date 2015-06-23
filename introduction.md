@@ -1,6 +1,8 @@
 ## Prefácio
 
-Certamente o Java é atualmente uma das linguagens mais usadas e populares no mundo, sendo que o seu maior diferencial não está na linguagem e sim na JVM (máquina virtual Java). A JVM vem sendo alvo de muitos estudos e pesquisas, afinal conhecer bem a JVM vai garantir ao desenvolvedor Java, maneiras para tirar o melhor proveito da linguagem e da plataforma além de programar de maneira mais eficiente levando em consideração tudo o que a JVM pode fazer por ele e ajudando a mesma a te ajudar. Com esse objetivo estou criando esse pequeno texto, ajudar a comunidade brasileira a conhecer a JVM.
+
+Certamente o Java é atualmente uma das linguagens mais usadas e populares no mundo, sendo que o seu maior diferencial não está na linguagem e sim na **JVM**, máquina virtual Java. A JVM vem sendo alvo de muitos estudos e pesquisas, afinal conhecer bem a JVM vai garantir ao desenvolvedor Java, maneiras para tirar o melhor proveito da linguagem e da plataforma além de programar de maneira mais eficiente levando em consideração tudo o que a JVM pode fazer por ele e ajudando a mesma a te ajudar. Com esse objetivo estou criando esse pequeno texto, ajudar a comunidade brasileira a conhecer a JVM.
+
 
 	Esse material é fruto dos meus trabalhos junto com o OpenJDK, a JVM open source e a partir da versão 7 se tornou a implementação de referência. Ao contrário do que muitas pessoas imaginam, existem milhões de máquinas virtuais, dentre as mais populares está a HotSpot (também conhecida como a JVM da Oracle). O OpenJDK é um projeto é vivo com ajuda de muitas empresas (Oracle, Intel, RedHat, AMD, Google, etc.), mas principalmente com a grande ajuda da comunidade, que dentre as diversas frentes de trabalho que existem podemos destacar o Adote o OpenJDK que visa a evolução da plataforma e do Java Livre (ajudando na refatoração, evangelizando sobre o OpenJDK, identificando e corrigindo bugs). 
 
