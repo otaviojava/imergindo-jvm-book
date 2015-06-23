@@ -1,4 +1,4 @@
-1 – Se queres prever o futuro, estuda o passado
+## Se queres prever o futuro, estuda o passado
 
 
 	JVM, java virtual machine ou máquina virtual java, tem sua história inciada em 1992 com o Green Project na época a linguagem era denominada de oak. Com o passar do tempo a máquina virtual foi evoluindo e ficando cada vez mais complexa. A linguagem java possui uma sintaxe similar ao C++, ele pode ser usado de várias maneiras e é orientado a objetos e se tornou popular em conjunto com a web. A JVM funciona como o alicerce da plataforma java ficando responsável por tratar todas as plataformas e SO de modo independente para a linguagem. A JVM não conhece absolutamente nada da linguagem Java, apenas o seu bytecode, que vem no formato .class,  que são as instruções da JVM (daí a possibilidade de portar outras linguagens para a JVM já que ele não roda Java e sim o bytecode). Esse class é o código compilado em java e representa uma classe ou interface em java. 
