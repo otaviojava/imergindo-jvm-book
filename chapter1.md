@@ -7,9 +7,7 @@
 Do seu início até a presente data o Java teve diversas versões. Essas modificações são gerenciadas pelo **JCP**, Java Community Process (o comitê que rege as mudanças da plataforma java com cerca de 30 empresas), a partir de JSRs, Java Specification Requests, especificações que fornecem tais modificações e melhorias. A documentação da linguagem fica no JSL, Java Language Specification, documentação da JVM fica Java Virtual Machine Specification.
 
 
-1.1 - Histórico da JVM
 
-    	Antes de se falar dos aspectos do Java, como linguagem, plataforma e máquina virtual é interessante conhecer um pouco sobre a evolução que o Java vem sofrendo. O projeto nasceu em 1995 e a partir desta data veio sofrendo constante evolução com ajuda de empresas e da comunidade.
 
 1.1.1 - JDK Alpha and Beta (1995) 
 
