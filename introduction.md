@@ -19,6 +19,6 @@ Para facilitar o entendimento do leitor esse trabalho foi dividido em seis parte
 
 * A **JVM** consiste em um processo básico de pegar a informação da classe, gerar stream para dentro da JVM (Naturalmente na memória principal) e executá-lo o tornando em código nativo, esse processo de carregar uma classe é feita em tempo de execução, ou seja, só é carregada a classe X no momento em que ela for chamada, não basta estar apenas no import, caso essa classe tenha um pai ou implemente interfaces elas serão carregadas antes dessa classe X. Toda classe possui um ciclo de vida e conheça um pouco mais sobre este ciclo na parte número cinco.
 	
-* Um grande diferencial da JVM é o recurso de gerenciamento automático da memória, esse processo consistem em matar e recuperar memória de objetos que não estão mais sendo utilizados, esse é o papel do Garbage Collector. Conheça um pouco mais sobre as implementações e em quais situações elas são mais aconselhadas.
+* Um grande diferencial da JVM é o recurso de gerenciamento automático da memória, esse processo consistem em matar e recuperar memória de objetos que não estão mais sendo utilizados, esse é o papel do **Garbage Collector**. Conheça um pouco mais sobre as implementações e em quais situações elas são mais aconselhadas.
 	
 Para finalizar será demonstrada uma visão prática do JNI e do projeto OpenJDK além dos conceitos de compilar a JVM. 
