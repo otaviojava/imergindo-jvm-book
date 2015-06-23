@@ -1,4 +1,4 @@
-## Prefácio
+## Falando um pouco sobre JVM
 
 
 Certamente o Java é atualmente uma das linguagens mais usadas e populares no mundo, sendo que o seu maior diferencial não está na linguagem e sim na **JVM**, máquina virtual Java. A JVM vem sendo alvo de muitos estudos e pesquisas, afinal conhecer bem a JVM vai garantir ao desenvolvedor Java, maneiras para tirar o melhor proveito da linguagem e da plataforma além de programar de maneira mais eficiente levando em consideração tudo o que a JVM pode fazer por ele e ajudando a mesma a te ajudar. Com esse objetivo estou criando esse pequeno texto, ajudar a comunidade brasileira a conhecer a JVM.
