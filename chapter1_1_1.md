@@ -1,4 +1,4 @@
-#### JDK Alpha and Beta (1995) 
+#### JDK Alpha e Beta (1995) 
 
 Nas versões alfas e betas se tiveram uma máquina instável.
 1.1.2 - JDK 1.0 (23 de janeiro de 1996) 
