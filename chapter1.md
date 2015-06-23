@@ -8,17 +8,6 @@ Do seu início até a presente data o Java teve diversas versões. Essas modific
 
 
 
-
-
-1.1.3 - JDK 1.1 (19 de fevereiro de 1997) 
-
-Grandes melhorias e refatorações nos modelos de evento do AWT
-Inner class adicionado a linguagem
-JavaBeans 
-JDBC 
-RMI 
-Reflection que suportava apenas introspecção apenas, nenhuma modificação em tempo real era possível
-
 1.1.4 - J2SE 1.2 (8 de dezembro de 1998) 
 
 	Com o codinome Plaground. Essa e as outras versões foram denominadas de Java 2, J2SE Java 2 Platform, Standard Edition, Houve modificações significantes nessa versão triplicando o código para 1520 classes em 59 pacotes incluindo:
