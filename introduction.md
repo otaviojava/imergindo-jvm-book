@@ -13,7 +13,7 @@ Para facilitar o entendimento do leitor esse trabalho foi dividido em seis parte
 
 * Em seguida se falará sobre o funcionamento básico da JVM, fará a distinção básica entre o Java linguagem e da máquina virtual, já que a última precisa ser compilada para que a linguagem seja multiplataforma, o ciclo de vida da JVM e dos processos em paralelo que nascem com uma aplicação Java. 
 
-* Saber aonde fica cada informação dentro da JVM e o nome dos seus respectivos registradores, será o alvo dessa terceira parte do trabalho. Saberá quais registradores serão compartilhados por todas as Threads e aqueles que não serão, assim nascem e morrem com a sua respectiva Thread. 
+* Saber aonde fica cada informação dentro da JVM e o nome dos seus respectivos registradores. Será o alvo dessa terceira parte do trabalho. Saberá quais registradores serão compartilhados por todas as Threads e aqueles que não serão, assim nascem e morrem com a sua respectiva Thread. 
 
 	O bytecode, a linguagem da Máquina virtual, pouco é explicado sobre ela, mas são graças aos seus opcodes que a JVM é multiplataforma. Nessa parte se verá quão diferente é o seu código em Java e do produto gerado, o bytecode, além da estrutura que a classe adquire após o processo de compilação.
 
