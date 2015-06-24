@@ -12,5 +12,5 @@ Elas são realizadas com os dois primeiros valores na pilha de operações e ret
 * **bit a bit** 'or': ior, lor. 
 * **bit a bit 'and'**: iand, a terra. 
 * **bit a bit ou exclusivo**: ixor, lxor. 
-* **Variável local incremente**: iinc. 
-* **Comparação**: dcmpg, dcmpl, fcmpg, fcmpl, lcmp.
+* **Variável local incremente**: `iinc`. 
+* **Comparação**: `dcmpg`, `dcmpl`, `fcmpg`, `fcmpl`, `lcmp`.
