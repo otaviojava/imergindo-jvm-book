@@ -6,7 +6,6 @@ Com o codinome **Merlin**, foi a primeira versão para a plataforma desenvolvida
 
 
 * A palavra-chave assert(JSR 41)
-* Melhorias nas bibliotecas
 * Expressões regulares
 * Encadeamento de exceção permite uma exceção de maior nível encapsule uma exceção de menor nível.
 * Suporte ao Protocolo de internet versão 6 (IPv6)
