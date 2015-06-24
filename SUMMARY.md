@@ -15,4 +15,9 @@
      * [Java SE 8 (18 de março de 2014)](chapter1_1_9.md)
 * [Funcionamento básico da JVM](chapter2.md)
 * [Registradores da JVM](chapter3.md)
-
+  * [Program Counter](chapter3_1.md)
+  * [Java Stack (Java virtual machine stack)](chapter3_1.md)
+    * [Stack Frame)](chapter3_1.md)
+      * [Stack variables](chapter3_2_1_1.md)
+      * [Stack Operand](chapter3_2_1_2.md)
+      * [Frame Data](chapter3_2_1_3.md)
