@@ -1,4 +1,4 @@
-#### JDK 1.1 (19 de fevereiro de 1997) 
+#### JDK 1.1 (19 de fevereiro de 1997)
 
 
 * Grandes melhorias e refatorações nos modelos de evento do AWT
