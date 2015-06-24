@@ -11,3 +11,14 @@ Representação de uma variável do tipo de referência dentro do **Heap** é di
 
 * Um apontará para o pool de objetos, local aonde estão as informações.
 * O segundo apontará para o seu constant pool (que possui as informações da classe quanto aos atributos, métodos, encapsulamentos, etc.) que fica localizado no **method Area**.
+
+
+
+A representação dos vetores se comporta de forma semelhante as variáveis de referência, mas eles ganham dois campos a mais: 
+
+1. 
+O **tamanho**, que define o tamanho do vetor
+1. 
+Uma **lista de referência** que apontam para os objetos que estão dentro desse vetor. 
+
+
