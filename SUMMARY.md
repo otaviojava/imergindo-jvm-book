@@ -31,3 +31,8 @@
 * [ByteCodes](chapter4.md)
   * [Carregar e salvar informações](chapter4_1.md)
   * [Operações aritméticas](chapter4_2.md)
+  * [Conversão de valores](chapter4_3.md)
+  * [Criação e manipulação de objetos](chapter4_4.md)
+  * [Instruções condicionais](chapter4_5.md)
+  * [Chamada de métodos e retorno de valores](chapter4_6.md)
+  * [Classes após compilação](chapter4_7.md)
