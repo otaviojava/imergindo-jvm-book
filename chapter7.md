@@ -130,3 +130,8 @@ JNIEXPORT jint JNICALL Java_HelloWorld_dobrar(JNIEnv * env, jclass classe, jint 
 Com o arquivo criado o próximo passo é a compilação, levando em consideração as devidas importações, como se trata de libs nativas as pastas variam de acordo com a plataforma. No caso do **linux** para compilar será necessário o seguinte comando:
 
 * `gcc -o libHelloWorld.so -shared -I$JAVA_HOME/include -I$JAVA_HOME/linux HelloWorld.c`
+
+Uma vez compilado o código-fonte e o transformado em uma lib, no caso do linux o arquivo com extensão `.so` de **Shared Object**. O próximo passo será “linkar” o arquivo nativo com o projeto, o primeiro passo é carregar a biblioteca dentro do código java (para isso será utilizado o comando `System.loadLibrary("NomedaLib");`). 
+
+O próximo passo é colocar a lib nativa no classpath no sistema operacional ou definir o seu caminho pelo parâmetro java.library.path ao executar o projeto java. Nesse exemplo será utilizado a segunda opção juntamente o parâmetro que será o nome da que será impresso no console, assim o comando ficará: 
+
