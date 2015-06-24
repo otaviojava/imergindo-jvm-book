@@ -1,4 +1,4 @@
-#### Implementação Incremental Concurrent 
+#### Implementação Incremental Concurrent
 
 
 
