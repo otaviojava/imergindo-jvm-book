@@ -24,3 +24,4 @@
   * [Native Method Stacks](chapter3_3.md)
   * [Method Area](chapter3_4.md)
   * [Vendo os conceitos na prática](chapter3_5.md)
+  * [Heap Space](chapter3_6.md)
