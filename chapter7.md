@@ -106,3 +106,22 @@ Repare que na interface o método possui o seguinte formato:
 **Java_NomeClasse_nomeMetodo**. Em relação aos parâmetros o primeiro elemento, o **JNIEnv**, ele é um ponteiro que aponta para um vetor no qual possui todas as funções do **JNI**, o segundo depende se é método da classe ou da instância. Caso seja estático, ou seja o método possua a palavra-chave `static`, o próximo parâmetro será o jclass que conterá as informações da classe, caso seja da instância o próximo parâmetro será o jobject que conterá as informações da instância.
 
 O próximo passo é a criação do arquivo que “implemente” a interface do `HelloWorld.h`, assim será criado o HelloWorld.c que implemente tal interface.
+
+
+```c
+#include <jni.h>  
+#include "HelloWorld.h" 
+#include <stdio.h>  
+
+JNIEXPORT void JNICALL Java_HelloWorld_chamarMensagem(JNIEnv * env, jobject obj,jstring nome){ 
+    const char * nomeNativo=(*env)->GetStringUTFChars(env, nome, NULL);  
+    printf("Hello World!!!!  %s\n", nomeNativo);  
+    return;  
+} 
+
+JNIEXPORT jint JNICALL Java_HelloWorld_dobrar(JNIEnv * env, jclass classe, jint valor){ 
+
+	return 2*valor; 
+}
+
+```
