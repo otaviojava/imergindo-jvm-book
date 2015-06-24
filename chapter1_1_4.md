@@ -1,4 +1,4 @@
-#### J2SE 1.3 (8 de maio de 2000) 
+#### J2SE 1.3 (8 de maio de 2000)
 
 
 Com o codinome **Kestrel**, as modificações mais importantes foram:
