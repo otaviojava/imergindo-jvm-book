@@ -22,3 +22,5 @@ O **tamanho**, que define o tamanho do vetor
 Uma **lista de referência** que apontam para os objetos que estão dentro desse vetor. 
 
 
+![Representação de um vetor dentro do Heap](imagens/chapter_3_9.png)
+
