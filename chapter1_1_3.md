@@ -1,4 +1,4 @@
-#### J2SE 1.2 (8 de dezembro de 1998) 
+#### J2SE 1.2 (8 de dezembro de 1998)
 
 	
 Com o codinome **Plaground**. Essa e as outras versões foram denominadas de Java 2, J2SE Java 2 Platform, Standard Edition, Houve modificações significantes nessa versão triplicando o código para 1520 classes em 59 pacotes incluindo:
