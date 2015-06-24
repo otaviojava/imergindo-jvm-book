@@ -107,3 +107,9 @@ public static int somarStatic(int a, int b) {
 
 }
 ```
+
+
+Criado o arquivo PrimeiroTeste.java e inserido o código 1 nesse arquivo, os próximos passos serão entrar pelo terminal no caminho que se encontra o arquivo PrimeiroTeste.java, compilar e analisar o seu respectivo byte code com os seguintes comandos.
+
+* `javac PrimeiroTeste.java`
+* `javap -verbose PrimeiroTeste`
