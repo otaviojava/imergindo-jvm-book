@@ -5,27 +5,3 @@
 
 
 Do seu início até a presente data o Java teve diversas versões. Essas modificações são gerenciadas pelo **JCP**, Java Community Process (o comitê que rege as mudanças da plataforma java com cerca de 30 empresas), a partir de JSRs, Java Specification Requests, especificações que fornecem tais modificações e melhorias. A documentação da linguagem fica no JSL, Java Language Specification, documentação da JVM fica Java Virtual Machine Specification.
-
-
-
-
-
-
-1.1.9 - Java SE 7 (28 de julho de 2011)
-
-	Com o codinome Dolphin possui o maior número de atualização no Java. Foi lançado no dia 7 de Julho e foi disponibilizado no dia 28 de julho do mesmo ano.
-
-Da Vinci Machine: Suporte para linguagens dinâmicas
-Projeto Coin
-Strings in switch
-Automatic resource management in try-statement
-Diamond
-Simplified varargs 
-Binary integer literals
- numeric literals
-mult-try
-Novo pacote utilitário de concorrência: JSR 166
-NIO2: novos biblioteca para IO
-
-
-	Nesse primeiro capítulo houve uma pequena introdução sobre o interior da JVM e da sua importância para a plataforma além do aspecto histórico das versões do Java e de sua evolução tanto como plataforma, linguagem e máquina virtual. 
