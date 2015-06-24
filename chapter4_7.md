@@ -6,24 +6,25 @@ Uma vez falando dos **bytecodes** é interessantes “puxar o gancho” e falar 
 1. 
 Um número mágico em hexadecimal definindo que essa clase é um .class o valor é **0xCAFEBABE**
 
-1.
+1. 
 O maior e menor número da versão do arquivo class que juntos definem a versão do arquivo, ou seja, JVM antes rodar precisa verificar se a versão V que ela pode executar estar entre: Menor Versão<V< Maior Versão.
 
-1.
+1. 
 **access_flags**: Essa flag indica o tipo de encapsulamento da classe, métodos e de suas propriedades os flags podem ser:
 
-ACC_PUBLIC: flag método, atributos públicos
-ACC_PRIVATE: flag para privados
-ACC_PROTECTED: protected
-ACC_STATIC: estático
-ACC_FINAL: final
-ACC_SYNCHRONIZED: indica um método sincronizado
-ACC_BRIDGE: indica que o método foi gerado pelo compilador
-ACC_VARARGS: indica que é varags 
-ACC_NATIVE: nativo
-ACC_ABSTRACT: abstrato
-ACC_STRICT: indica que o método é strict
-ACC_SYNTHETIC: indica que o método não é “original”
+
+* **ACC_PUBLIC**: flag método, atributos públicos
+* **ACC_PRIVATE**: flag para privados
+* **ACC_PROTECTED**: protected
+* **ACC_STATIC**: estático
+* **ACC_FINAL**: final
+* **ACC_SYNCHRONIZED**: indica um método sincronizado
+* **ACC_BRIDGE**: indica que o método foi gerado pelo compilador
+* **ACC_VARARGS**: indica que é varags 
+* **ACC_NATIVE**: nativo
+* **ACC_ABSTRACT**: abstrato
+* **ACC_STRICT**: indica que o método é strict
+* **ACC_SYNTHETIC**: indica que o método não é “original”
 
 
 4) this_class: o valor da corrente classe deve ter um índice válido na constant pool
