@@ -13,3 +13,11 @@ Esse registrador tem a finalidade de armazenar logicamente o stream da classe, e
 
 
 Para cada classe carregada no Java é carregada um **constant pool**, que contém as seguintes informações:
+
+
+* O constant pool do tipo (Para cada classe Carregada é criada um pool de constant, ele contém o link simbólico para os métodos e para os atributos além das constantes existentes no tipo).
+* informações dos atributos (o nome do atributo, o tipo e o seu modificador).
+* informação dos métodos (o nome do método, o seu retorno, o número e tipo dos parâmetros em ordem e o tipo e o seu modificador).
+* Referência para o ClassLoader (classe responsável para carregar a classe)
+* Variáveis da classe (variáveis compartilhadas entre todas as classes isso inclui as constantes).
+* Referência da classe (uma instância da java.lang.Class para toda classe carregada.
