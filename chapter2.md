@@ -34,7 +34,7 @@ Falando um pouco mais sobre esses processos paralelos ou `Thread`, a JVM permite
  
 Quando essa rotina gera uma exceção a parte nativa envia essa informação para a JVM que a encerra. Quando a `Thread` termina todos os recursos específicos, tanto para em Java quanto a parte nativa, são entregues para JVM.
 
-	Como na linguagem, a JVM opera em dois tipos de dados: Os primitivos e os valores de referência. A máquina espera que toda a verificação quanto ao tipo tenha sido feito no momento da execução, sendo que os tipos primitivos não precisão de tal verificação ou inspeção já que eles operam com um tipo específico de instrução (por exemplo: iadd, ladd, fadd, e dadd para inteiro, long, float e double respectivamente).
+Como na linguagem, a JVM opera em dois tipos de dados: Os primitivos e os valores de referência. A máquina espera que toda a verificação quanto ao tipo tenha sido feito no momento da execução, sendo que os tipos primitivos não precisão de tal verificação ou inspeção já que eles operam com um tipo específico de instrução (por exemplo: iadd, ladd, fadd, e dadd para inteiro, long, float e double respectivamente).
 
 	A JVM tem suporte para objetos que são ou instância de uma classe alocada dinamicamente ou um array, esses valores são do tipo reference, o seu funcionamento é semelhante de linguagens como C/C++.
 
