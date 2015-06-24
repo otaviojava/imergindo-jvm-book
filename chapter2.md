@@ -18,3 +18,9 @@ O único e principal motivo da JVM é rodar o aplicativo. Quando se inicia uma e
 
 
 Ao iniciar uma JVM existem alguns processos que rodam em paralelos e em backgrouns e executam diversas operações e processos para manter a JVM sempre disponível: 
+
+
+* Os Timers que são responsáveis pelos eventos que acontecem periodicamente, por exemplo, interrupções, eles são usados para organizar os processos que acontecem continuamente. 
+* Os processos do Garbage Collector é responsável por executar as atividades do coletor de lixo da JVM.
+* Compiladores que são responsáveis por transformar bytecode em código nativo.
+* Os ouvintes, que recebem sinais (informações) e tem como principal objetivo enviar essas informações para o processo correto dentro da JVM.
