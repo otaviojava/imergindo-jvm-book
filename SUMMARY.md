@@ -8,5 +8,9 @@
      * [JDK 1.1 (19 de fevereiro de 1997)](chapter1_1_2.md)
      * [J2SE 1.2 (8 de dezembro de 1998)](chapter1_1_3.md)
      * [J2SE 1.3 (8 de maio de 2000)](chapter1_1_4.md)
+     * [J2SE 1.4 (6 de fevereiro de 2002)](chapter1_1_5.md)
+     * [J2SE 5.0 (30 de setembro de 2004)](chapter1_1_6.md)
+     * [Java SE 6 (11 de dezembro de 2006)](chapter1_1_7.md)
+     * [Java SE 7 (28 de julho de 2011)](chapter1_1_8.md)
 
 
