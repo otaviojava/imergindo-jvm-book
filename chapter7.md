@@ -9,6 +9,8 @@ A comunicação entre a JVM e o código nativo quase em sua grande maioria é fe
 
 No entanto, usar o requer algumas responsabilidades, vale lembrar que usar o JNI perde a portabilidade, um erro nativo não é controlado pela JVM (Vale lembrar na parte em que se falou de registrados, a pilha nativa e o **PC** quando aponta para um processo nativo, não se sabe o seu valor preciso), não é possível debugar o código nativo através da plataforma Java, caso acontece um erro nativo pode quebrar a execução da JVM, ele não prover um Garbage Collector automático ou qualquer gerenciamento por parte da JVM. Assim é muito importante saber o momento em que se usará o JNI.
 
+
+
 Os objetos em Java podem ser mapeados para objetos nativos e virse-versa, para garantir a comunicação de duas mãos, assim é possível estar passando um objeto Java para o lado nativo ver o seu valor.
 
 
@@ -140,4 +142,6 @@ O próximo passo é colocar a lib nativa no classpath no sistema operacional ou 
 A saída será: 
 
 * `Hello World!!!!  Otávio`
-* `O dobro de 5 é: 10 `
+* `O dobro de 5 é: 10 
+
+Com isso se apresentou o recurso do **JNI**, a interface que se comunica o JVM para linguagens nativa como `C` e `C++` e da sua importância para a JVM como a implementação do **Garbage Collector**, sua existência em algumas APIs como o JavaSound além de se integrar com código legado e com plataformas cujo a JVM até o momento não atingiu. No entanto, vale salientar que se perde o fator multiplataforma e não será mais gerenciado pela JVM usando este recurso. Aprender sobre JNI é muito importante para compreender o código da máquina virtual Java, mas é necessário um conhecimento na linguagem `C` e `C++`.`
