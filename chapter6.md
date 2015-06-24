@@ -10,7 +10,7 @@ Diferente de algumas linguagens o Java possui um gerenciamento de memória autom
 
 O mais conhecido certamente é o **Mark and Sweep**, basicamente dois processos que marca os objetos utilizados e no final os objetos não marcados são dispensáveis para retomar a memória, o maior problema é que todos os processos são parados para executar tal procedimento inviabilizando chamá-lo constantemente. Em função desse problema citado anteriormente falaremos do segundo algorismo, que leva em consideração que muitos objetos não possuem uma longa vida, no entanto, alguns levam bastante tempo na memória, assim os algoritmos se baseia em gerações que divide a memória em três partes (jovem, efetiva e permanente).
 
-Para melhor gerenciar o coletor de lixo a memória heap é dividia basicamente em três partes:
+Para melhor gerenciar o coletor de lixo a memória heap é dividia basicamente em algumas partes:
 
 
 * **Young Generation**: É onde contém os objetos recém-criados, a grande maioria dos objetos morrem dentro dessa área. Ela é subdivida em duas partes: **Eden** (local aonde o objetos nascem) e **Survivers(N)** locais aonde os objetos vão passando até sair da Young Generation. O seu funcionamento é de maneira simples: Os objetos nascem no **Eden**, depois de um tempo, os objetos são copiados “vivos” para os **Survivers**, os objetos que não foram copiados não são apagados, mas no futuro, outros objetos ocuparão seu espaço. 
