@@ -5,7 +5,7 @@ Esse registrador tem a finalidade de armazenar logicamente o stream da classe, e
 
 
 
-* O **qualified** da classe (O qualifed é o endereço da sua classe que é definido pelo pacote mais “`.`” e o nome da Classe, por exemplo, `java.lang.Object` ou `java.util.Date`)
+* O **qualified** da classe (O qualifed é o endereço da sua classe que é definido pelo pacote mais `.` e o nome da Classe, por exemplo, `java.lang.Object` ou `java.util.Date`)
 * O **qualified** da classe pai (menos para as Interfaces e o `java.lang.Object`) 
 * Informação se é uma classe ou interface 
 * Os modificadores
