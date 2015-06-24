@@ -103,6 +103,6 @@ JNIEXPORT jint JNICALL Java_HelloWorld_dobrar
 Repare que na interface o método possui o seguinte formato:
 
 
-**Java_NomeClasse_nomeMetodo**. Em relação aos parâmetros o primeiro elemento, o JNIEnv, ele é um ponteiro que aponta para um vetor no qual possui todas as funções do JNI, o segundo depende se é método da classe ou da instância. Caso seja estático, ou seja o método possua a palavra-chave static, o próximo parâmetro será o jclass que conterá as informações da classe, caso seja da instância o próximo parâmetro será o jobject que conterá as informações da instância.
+**Java_NomeClasse_nomeMetodo**. Em relação aos parâmetros o primeiro elemento, o **JNIEnv**, ele é um ponteiro que aponta para um vetor no qual possui todas as funções do **JNI**, o segundo depende se é método da classe ou da instância. Caso seja estático, ou seja o método possua a palavra-chave `static`, o próximo parâmetro será o jclass que conterá as informações da classe, caso seja da instância o próximo parâmetro será o jobject que conterá as informações da instância.
 
-	O próximo passo é a criação do arquivo que “implemente” a interface do HelloWorld.h, assim será criado o HelloWorld.c que implemente tal interface.
+O próximo passo é a criação do arquivo que “implemente” a interface do `HelloWorld.h`, assim será criado o HelloWorld.c que implemente tal interface.
