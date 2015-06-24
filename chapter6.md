@@ -19,4 +19,4 @@ Para melhor gerenciar o coletor de lixo a memória heap é dividia basicamente e
 
 ![Divisão da memória por geração](imagens/chapter_6_2.png)
  
-
+Comentado um pouco sobre os processos de **minor collector** (procedimento de generation que cópia objetos para registradores sobreviventes) e o **maior collector** (procedimento cujo os algoritmos são derivados de **Mark and Swep** que apaga os objetos não utilizados e quando fragmentada a memória haverá o procedimento de compactação, vale lembrar que para tal procedimento a JVM para todos os seus processos). O objetivo agora será falar o estilo ou o modo dos Garbage Collector.
