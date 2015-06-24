@@ -136,3 +136,8 @@ Uma vez compilado o código-fonte e o transformado em uma lib, no caso do linux 
 O próximo passo é colocar a lib nativa no classpath no sistema operacional ou definir o seu caminho pelo parâmetro java.library.path ao executar o projeto java. Nesse exemplo será utilizado a segunda opção juntamente o parâmetro que será o nome da que será impresso no console, assim o comando ficará: 
 
 * `java -Djava.library.path=. HelloWorld Otávio 4`
+ 
+A saída será: 
+
+* `Hello World!!!!  Otávio`
+* `O dobro de 5 é: 10 `
