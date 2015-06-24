@@ -47,7 +47,7 @@ Uma vez falando dos **bytecodes** é interessantes “puxar o gancho” e falar 
   * [[ referência de uma matriz 
 
 
-Assim, por exemplo: double dobro(double d) é igual  (D)D e Double dobro(Double d) é (Ljava/lang/Double;)Ljava/lang/Double.
+Assim, por exemplo: `double dobro(double d)` é igual  `(D)D` e `Double dobro(Double d)` é `(Ljava/lang/Double;)Ljava/lang/Double`.
 
 	Dentro da constant pool cada informação possui o seu primeiro byte que indica o seu tipo de informação:
 
