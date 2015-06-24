@@ -24,3 +24,18 @@ Ao iniciar uma JVM existem alguns processos que rodam em paralelos e em backgrou
 * Os processos do Garbage Collector é responsável por executar as atividades do coletor de lixo da JVM.
 * Compiladores que são responsáveis por transformar bytecode em código nativo.
 * Os ouvintes, que recebem sinais (informações) e tem como principal objetivo enviar essas informações para o processo correto dentro da JVM.
+ 
+
+Falando um pouco mais sobre esses processos paralelos ou `Thread`, a JVM permite que múltiplos processos executem concorrentemente, essa rotina em Java está diretamente relacionada com uma `Thread` nativa. Tão logo um processo paralelo em Java nasça, os seus primeiros passos são:
+
+* Alocação de memória
+* Sincronização dos objetos
+* Criação dos registradores específicos para a mesma e a alocação da `Thread` nativa. 
+ 
+Quando essa rotina gera uma exceção a parte nativa envia essa informação para a JVM que a encerra. Quando a `Thread` termina todos os recursos específicos, tanto para em Java quanto a parte nativa, são entregues para JVM.
+
+	Como na linguagem, a JVM opera em dois tipos de dados: Os primitivos e os valores de referência. A máquina espera que toda a verificação quanto ao tipo tenha sido feito no momento da execução, sendo que os tipos primitivos não precisão de tal verificação ou inspeção já que eles operam com um tipo específico de instrução (por exemplo: iadd, ladd, fadd, e dadd para inteiro, long, float e double respectivamente).
+
+	A JVM tem suporte para objetos que são ou instância de uma classe alocada dinamicamente ou um array, esses valores são do tipo reference, o seu funcionamento é semelhante de linguagens como C/C++.
+
+	Os tipos primitivos existentes na JVM são: numéricos, booleano e returnAdress, sendo que os tipos numéricos são os valores inteiros e flutuantes.
