@@ -1,6 +1,8 @@
-1.1.6 - J2SE 1.4 (6 de fevereiro de 2002)
+#### J2SE 1.4 (6 de fevereiro de 2002)
 
-	Com o codinome Merlin, foi a primeira versão para a plataforma desenvolvida pelo JCP como a JSR 59:
+	
+
+Com o codinome **Merlin**, foi a primeira versão para a plataforma desenvolvida pelo **JCP** como a JSR 59:
 
 Alterações na linguagem
 A palavra-chave assert( JSR 41)
