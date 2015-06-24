@@ -3,14 +3,12 @@
 
 Uma vez falando dos **bytecodes** é interessantes “puxar o gancho” e falar como fica uma classe após sua compilação. Como já foi dito após a compilação é gerado um **bytecode**, cujo arquivo possui a extensão .class, e cada arquivo representa apenas uma classe. Cada arquivo possui as seguintes características:
 
-1. 
-Um número mágico em hexadecimal definindo que essa clase é um .class o valor é **0xCAFEBABE**
+ 
+* Um número mágico em hexadecimal definindo que essa clase é um .class o valor é **0xCAFEBABE**
 
-1. 
-O maior e menor número da versão do arquivo class que juntos definem a versão do arquivo, ou seja, JVM antes rodar precisa verificar se a versão V que ela pode executar estar entre: Menor Versão<V< Maior Versão.
+* O maior e menor número da versão do arquivo class que juntos definem a versão do arquivo, ou seja, JVM antes rodar precisa verificar se a versão V que ela pode executar estar entre: Menor Versão<V< Maior Versão.
 
-1. 
-**access_flags**: Essa flag indica o tipo de encapsulamento da classe, métodos e de suas propriedades os flags podem ser:
+* **access_flags**: Essa flag indica o tipo de encapsulamento da classe, métodos e de suas propriedades os flags podem ser:
 
 
 * **ACC_PUBLIC**: flag método, atributos públicos
@@ -27,26 +25,26 @@ O maior e menor número da versão do arquivo class que juntos definem a versão
 * **ACC_SYNTHETIC**: indica que o método não é “original”
 
 
-
-1. 
-this_class: o valor da corrente classe deve ter um índice válido na constant pool
+. 
+* **this_class**: o valor da corrente classe deve ter um índice válido na constant pool
  
-5) super_class: as informações da superclasse devem estar dentro e pode ocupar o índice zero ou não, se ocupar o índice zero essa classe é o java.lang.Object, a única classe que não possui pai, do contrário terá que ser um índice válido e ter informações que apontam para a classe pai. As informações da classe é definida pelo seu nome com o seu caminho, por exemplo, a nome da String seria java/lang/String.
+* **super_class**: as informações da superclasse devem estar dentro e pode ocupar o índice zero ou não, se ocupar o índice zero essa classe é o java.lang.Object, a única classe que não possui pai, do contrário terá que ser um índice válido e ter informações que apontam para a classe pai. As informações da classe é definida pelo seu nome com o seu caminho, por exemplo, a nome da String seria java/lang/String.
 
-6) constant pool: O constant pool é uma estrutura de tabela que contém o nome das classes, interfaces, métodos, atributos e outras informações das classes. Para guardar essas informações existem dois registadores par cada informação importante: O vetor coma s informações da classe, método, ou atributos e o seu contador ou índice que funciona como limitador do vetor. Esse é o caso das interfaces que a classe implementa, atributos, métodos que possuem seus respectivos vetor e índices.
-	As descrições dos atributos ou dos parâmetros em um método quanto ao seu tipo é definido a seguir:
+* **constant pool**: O constant pool é uma estrutura de tabela que contém o nome das classes, interfaces, métodos, atributos e outras informações das classes. Para guardar essas informações existem dois registadores par cada informação importante: O vetor coma s informações da classe, método, ou atributos e o seu contador ou índice que funciona como limitador do vetor. Esse é o caso das interfaces que a classe implementa, atributos, métodos que possuem seus respectivos vetor e índices.
 
-B byte signed byte 
-C char 
-D double 
-F float 
-I int 
-J long 
-L Classname ; referência 
-S short
-Z boolean 
-[ referência de um vetor 
-[[ referência de uma matriz 
+* As descrições dos atributos ou dos parâmetros em um método quanto ao seu tipo é definido a seguir:
+
+  * B byte signed byte 
+  * C char 
+  * D double 
+  * F float 
+  * I int 
+  * J long 
+  * L Classname ; referência 
+  * S short
+  * Z boolean 
+  * [ referência de um vetor 
+  * [[ referência de uma matriz 
 
 
 Assim, por exemplo: double dobro(double d) é igual  (D)D e Double dobro(Double d) é (Ljava/lang/Double;)Ljava/lang/Double.
