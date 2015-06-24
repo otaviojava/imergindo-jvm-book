@@ -2,3 +2,16 @@
 
 
 Toda classe pela JVM possui o seu ciclo de vida, e começa quando ela nasce dentro da JVM, esse processo é feito de modo lazy, ou seja, a class X será carregada no momento em que for necessário, ao instanciar um objeto é feito o processo de encontrar a representação binária da classe, carregar as informações e colocar a sua classe dentro da JVM, então criar o objeto. Todas as classes precisam passar por esse processo inclusive a classe que inicia a JVM. Caso a classe estenda de uma classe ou implemente interfaces as mesmas terão de ser carregadas primeiro. Como cada um desses três processos possui detalhes, se discriminará as ações de cada um.	
+
+![O ciclo normal de uma classe Java, primeiro é carregada para dentro da JVM, dentro da memória principal e virando stream, em seguida suas instruções são “traduzidas”  para o execução nativa.](imagens/chapter_5_1.png)
+
+
+
+O carregamento de classe consiste em subir a classe para memória principal e colocar na JVM, esse processo acontece uma vez com pot **qualifield**, com esse stream carregado se realiza o parser para o registrador **method Area** e concluindo gera a interface que representa tal arquivo, o `java.lang.Class`. 	
+
+A interface `Class` é o produto do processo de carregar a classe para a memória principal, é a representação do arquivo, com isso ele contém as informações do mesmo, como lista dos métodos, atributos, interfaces, anotações, etc.
+
+As Classes por sua vez, são carregadas pelo `ClassLoader` (com exceção dos array que não possui representação binária).
+
+
+Na JVM existem múltiplos classe loaders com diferentes regras, assim podemos classificar-las como: 
