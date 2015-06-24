@@ -36,3 +36,4 @@
   * [Instruções condicionais](chapter4_5.md)
   * [Chamada de métodos e retorno de valores](chapter4_6.md)
   * [Classes após compilação](chapter4_7.md)
+* [Ciclo de vida de uma classe](chapter5.md)
