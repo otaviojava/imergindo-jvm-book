@@ -1,4 +1,4 @@
-#### Implementação Concurrent 
+#### Implementação Concurrent
 
 
 
