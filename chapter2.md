@@ -66,8 +66,7 @@ Sendo que os tipos numéricos são os valores inteiros e flutuantes.
 |boolean|inteiro||false|booleano|
 |returnAddress|||nulo|ponteiro|
 
-
-Os formatos de ponto flutuante são o float, com precisão simples, o double, com dupla precisão, no formato IEE 754 os valores e as operações como especificado no padrão IEEE para aritmética de ponto flutuante binário (ANSI / IEEE. 754-1985, Nova York). Esse padrão não inclui apenas valores positivos e negativos, mas zero, positivo e negativo infinito e não um número (abreviado como Nan é utilizado para representar valores inválidos como divisão por zero). Por padrão, as JVM suportam esse formato, mas também podem suportar versões estendidas de double e float.
+Os formatos de ponto flutuante são o `float`, com precisão simples, e o `double`, com dupla precisão. Tantos os valores como as operações seguem o especificado no padrão IEEE para aritmética de ponto flutuante binário (ANSI / IEEE. 754-1985, Nova York). Esse padrão não inclui apenas valores positivos e negativos, mas zero, positivo e negativo infinito e não um número (abreviado como Nan é utilizado para representar valores inválidos como divisão por zero). Por padrão, as JVM suportam esse formato, mas também podem suportar versões estendidas de double e float.
 
 	O returnAdress é usado apenas pela JVM, não possui representação na linguagem, tem seu funcionamento similar a ponteiros e diferentes dos tipos primitivos não podem ser modificados em tempo de execução.
 
