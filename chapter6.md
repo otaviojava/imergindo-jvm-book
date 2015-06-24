@@ -15,3 +15,8 @@ Para melhor gerenciar o coletor de lixo a memória heap é dividia basicamente e
 
 * **Young Generation**: É onde contém os objetos recém-criados, a grande maioria dos objetos morrem dentro dessa área. Ela é subdivida em duas partes: **Eden** (local aonde o objetos nascem) e **Survivers(N)** locais aonde os objetos vão passando até sair da Young Generation. O seu funcionamento é de maneira simples: Os objetos nascem no **Eden**, depois de um tempo, os objetos são copiados “vivos” para os **Survivers**, os objetos que não foram copiados não são apagados, mas no futuro, outros objetos ocuparão seu espaço. 
 * Com o passar das coleções os objetos existentes saem da **Young** e vão para **Tenured generation**, nesse espaço o gerenciamento de objetos é realizado de forma diferente, assim não há cópia, existem algoritmos derivados do **Swep and Mark**, com os objetos apagados a próxima preocupação será em relação a fragmentação do registrador, assim haverá o processo de compactação dos dados.
+
+
+![Divisão da memória por geração](imagens/chapter_6_2.png)
+ 
+
