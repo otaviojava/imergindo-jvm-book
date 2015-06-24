@@ -15,3 +15,10 @@ As Classes por sua vez, são carregadas pelo `ClassLoader` (com exceção dos ar
 
 
 Na JVM existem múltiplos classe loaders com diferentes regras, assim podemos classificar-las como: 
+
+* **BootStrap** ele se encontra no topo da hierarquia dos class loaders, esse objeto é responsável por carregar a API básica do Java, e os objetos que possuam um altíssimo nível de confiança pela JVM. 
+* **Extensão** é responsável por carregar as API padrões do Java como as de segurança e Collection. 
+* O **system** esse é o class loader padrão da aplicação, ele é responsável por carregar as classes que estão contidas no classpath. 
+* Abaixo do System Class Loader o usuário adicionará um class loader, que tem alguns motivos especiais, entre eles definir um grupo de class loader específico para um domínio ou aplicação, é o caso dos servidores de aplacação como o tomcat e o Glassfish.
+ 
+
