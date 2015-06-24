@@ -125,3 +125,8 @@ JNIEXPORT jint JNICALL Java_HelloWorld_dobrar(JNIEnv * env, jclass classe, jint 
 }
 
 ```
+
+
+Com o arquivo criado o próximo passo é a compilação, levando em consideração as devidas importações, como se trata de libs nativas as pastas variam de acordo com a plataforma. No caso do **linux** para compilar será necessário o seguinte comando:
+
+* `gcc -o libHelloWorld.so -shared -I$JAVA_HOME/include -I$JAVA_HOME/linux HelloWorld.c`
