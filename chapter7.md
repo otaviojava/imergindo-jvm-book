@@ -7,6 +7,6 @@ A comunicação entre a JVM e o código nativo quase em sua grande maioria é fe
 
 
 
-No entanto, usar o requer algumas responsabilidades, vale lembrar que usar o JNI perde a portabilidade, um erro nativo não é controlado pela JVM (Vale lembrar na parte em que se falou de registrados, a pilha nativa e o PC quando aponta para um processo nativo, não se sabe o seu valor preciso), não é possível debugar o código nativo através da plataforma Java, caso acontece um erro nativo pode quebrar a execução da JVM, ele não prover um Garbage Collector automático ou qualquer gerenciamento por parte da JVM. Assim é muito importante saber o momento em que se usará o JNI.
+No entanto, usar o requer algumas responsabilidades, vale lembrar que usar o JNI perde a portabilidade, um erro nativo não é controlado pela JVM (Vale lembrar na parte em que se falou de registrados, a pilha nativa e o **PC** quando aponta para um processo nativo, não se sabe o seu valor preciso), não é possível debugar o código nativo através da plataforma Java, caso acontece um erro nativo pode quebrar a execução da JVM, ele não prover um Garbage Collector automático ou qualquer gerenciamento por parte da JVM. Assim é muito importante saber o momento em que se usará o JNI.
 
 Os objetos em Java podem ser mapeados para objetos nativos e virse-versa, para garantir a comunicação de duas mãos, assim é possível estar passando um objeto Java para o lado nativo ver o seu valor.
