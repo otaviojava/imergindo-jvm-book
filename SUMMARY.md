@@ -43,3 +43,4 @@
   * [Implementação Concurrent](chapter6_3.md)
   * [Implementação Incremental Concurrent](chapter6_4.md)
   * [Implementação Garbage First](chapter6_5.md)
+* [Interface Nativa Java](chapter7.md)
