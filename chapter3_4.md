@@ -10,3 +10,6 @@ Esse registrador tem a finalidade de armazenar logicamente o stream da classe, e
 * Informação se é uma classe ou interface.
 * Os modificadores.
 * A lista com os **qualifieds** das interfaces.
+
+
+Para cada classe carregada no Java é carregada um **constant pool**, que contém as seguintes informações:
