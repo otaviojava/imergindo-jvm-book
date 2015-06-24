@@ -113,3 +113,46 @@ Criado o arquivo PrimeiroTeste.java e inserido o c√≥digo 1 nesse arquivo, os pr√
 
 * `javac PrimeiroTeste.java`
 * `javap -verbose PrimeiroTeste`
+
+O resultado:
+
+```bytecode
+
+ minor version: 0 
+  major version: 51 
+  flags: ACC_PUBLIC, ACC_SUPER 
+Constant pool: 
+   #1 = Methodref          #5.#21         //  java/lang/Object."<init>":()V 
+   #2 = Methodref          #22.#23        //  java/lang/Double.doubleValue:()D 
+   #3 = Methodref          #22.#24        //  java/lang/Double.valueOf:(D)Ljava/lang/Double; 
+   #4 = Class              #25            //  PrimeiroTeste 
+   #5 = Class              #26            //  java/lang/Object 
+   #6 = Utf8               <init> 
+   #7 = Utf8               ()V 
+   #8 = Utf8               Code 
+   #9 = Utf8               LineNumberTable 
+  #10 = Utf8               somarInstancias 
+  #11 = Utf8               (Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/Double; 
+  #12 = Utf8               somarDouble 
+  #13 = Utf8               (DD)D 
+  #14 = Utf8               somarInteiros 
+  #15 = Utf8               (II)I 
+  #16 = Utf8               somarShort 
+  #17 = Utf8               (SB)S 
+  #18 = Utf8               somarStatic 
+  #19 = Utf8               SourceFile 
+  #20 = Utf8               PrimeiroTeste.java 
+  #21 = NameAndType        #6:#7          //  "<init>":()V 
+  #22 = Class              #27            //  java/lang/Double 
+  #23 = NameAndType        #28:#29        //  doubleValue:()D 
+  #24 = NameAndType        #30:#31        //  valueOf:(D)Ljava/lang/Double; 
+  #25 = Utf8               PrimeiroTeste 
+  #26 = Utf8               java/lang/Object 
+  #27 = Utf8               java/lang/Double 
+  #28 = Utf8               doubleValue 
+  #29 = Utf8               ()D 
+  #30 = Utf8               valueOf 
+  #31 = Utf8               (D)Ljava/lang/Double; 
+  
+ ```
+
