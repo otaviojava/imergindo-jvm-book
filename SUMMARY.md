@@ -12,5 +12,6 @@
      * [J2SE 5.0 (30 de setembro de 2004)](chapter1_1_6.md)
      * [Java SE 6 (11 de dezembro de 2006)](chapter1_1_7.md)
      * [Java SE 7 (28 de julho de 2011)](chapter1_1_8.md)
+     * [Java SE 8 (18 de março de 2014)](chapter1_1_9.md)
 
 
