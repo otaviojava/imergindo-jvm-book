@@ -22,3 +22,6 @@ Na JVM existem múltiplos classe loaders com diferentes regras, assim podemos cl
 * Abaixo do System Class Loader o usuário adicionará um class loader, que tem alguns motivos especiais, entre eles definir um grupo de class loader específico para um domínio ou aplicação, é o caso dos servidores de aplacação como o tomcat e o Glassfish.
  
 
+![Hierarquia dos Class Loaders](imagens/chapter_5_2.png)
+
+
