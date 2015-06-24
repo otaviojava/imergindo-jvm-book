@@ -9,3 +9,5 @@ Ponteiros nativos
 returnAdress
 
 Esses dados possuem informações quanto a instrução que está sendo executada pela `Thread`. Se o método executado for nativo o **PC** será um ponteiro e não tem o seu valor definido, do contrário, ele terá o endereço de instrução, o **returnAdress**.
+
+![Funcionamento do PC](imagens/chapter_3_2.png)
