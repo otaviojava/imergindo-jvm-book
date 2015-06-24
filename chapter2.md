@@ -44,6 +44,12 @@ Os valores de referência.
 
 A máquina espera que toda a verificação quanto ao tipo tenha sido feito no momento da execução, sendo que os tipos primitivos não precisão de tal verificação ou inspeção já que eles operam com um tipo específico de instrução (por exemplo: iadd, ladd, fadd, e dadd para inteiro, long, float e double respectivamente).
 
-	A JVM tem suporte para objetos que são ou instância de uma classe alocada dinamicamente ou um array, esses valores são do tipo reference, o seu funcionamento é semelhante de linguagens como C/C++.
+A JVM tem suporte para objetos que são ou instância de uma classe alocada dinamicamente ou um array, esses valores são do tipo **reference**, o seu funcionamento é semelhante de linguagens como C/C++.
 
-	Os tipos primitivos existentes na JVM são: numéricos, booleano e returnAdress, sendo que os tipos numéricos são os valores inteiros e flutuantes.
+Os tipos primitivos existentes na JVM são: 
+
+* Numéricos
+* Booleano 
+* returnAdress
+
+Sendo que os tipos numéricos são os valores inteiros e flutuantes.
