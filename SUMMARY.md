@@ -28,4 +28,6 @@
   * [Cache de código](chapter3_7.md)
     * [Just In Time (JIT) Compilation](chapter3_7_1.md)
   * [Recapitulando](chapter3_8.md)
-
+* [ByteCodes](chapter4.md)
+  * [Carregar e salvar informações](chapter4_1.md)
+  * [Operações aritméticas](chapter4_2.md)
