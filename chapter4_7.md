@@ -79,3 +79,31 @@ Para as anotações exitem: `RuntimeVisibleAnnotations`, `RuntimeInvisibleAnnota
 O contador da consant pool possui 16 bits, ou seja, ele só pode conter 2¹⁶=65535 elementos, esse mesmo número vale para o número de métodos, atributos, interfaces implementadas, variáveis locais, pilha de operações (sendo que para esses dois últimos o longo e o double ocupam dois espaços), o nome do método ou atributo. O número de dimensões de uma matriz é 255 o mesmo número vale para a quantidade de parâmetros, caso não seja um método estático deve-se incluir a instância.
 	
 Com o objetivo de pôr em prática e visualizar esses **bytescodes**, será demonstrado um simples código e o seu respectivo bytecode.
+
+
+```java 
+public class PrimeiroTeste{ 
+
+public Double somarInstancias(Double a, Double b) { 
+
+	Double resultado = a + b; 
+	return resultado; 
+} 
+
+public double somarDouble(double a, double b) { 
+        return a + b; 
+} 
+public int somarInteiros(int a, int b) { 
+        return a + b; 
+} 
+
+public short somarShort(short a, byte b) { 
+        return (short) (a + b); 
+} 
+
+public static int somarStatic(int a, int b) { 
+        return a + b; 
+} 
+
+}
+```
