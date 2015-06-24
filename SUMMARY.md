@@ -22,4 +22,5 @@
       * [Stack Operand](chapter3_2_1_2.md)
       * [Frame Data](chapter3_2_1_3.md)
   * [Native Method Stacks](chapter3_3.md)
-  * [Native Method Stacks](chapter3_3.md)
+  * [Method Area](chapter3_4.md)
+  * [Vendo os conceitos na prática](chapter3_5.md)
