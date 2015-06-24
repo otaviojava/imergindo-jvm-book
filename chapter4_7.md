@@ -156,3 +156,5 @@ Constant pool:
   
  ```
 
+
+Nesse primeiro resultado podemos visualizar a constant pool e a menor e a maior versão do class. O Constant Pool contém as informações da respectiva classe, já que toda classe possui essa informação, inclusive as InnerClasses, e eles são armazenadas em um vetor.
