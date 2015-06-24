@@ -70,11 +70,12 @@ Dentro da constant pool cada informação possui o seu primeiro byte que indica 
 
 
 
-StackMapTable: é composto de stackmapframe e tem o objetivo de verificações para o bytecode
+**StackMapTable**: é composto de stackmapframe e tem o objetivo de verificações para o bytecode
 
 Para auxiliar a depuração na linguagem Java existem algumas informações para depurar o código essas variáveis são: LocalVariableTable e LocalVariableTypeTable que define as informações das variáveis locais para o debug e LineNumberTable define a parte do bytecode e sua correspondente linha de código.
-Para as anotações exitem: RuntimeVisibleAnnotations, RuntimeInvisibleAnnotations, RuntimeVisibleParameterAnnotations, RuntimeInvisibleParameterAnnotations que contém informações das anotações quanto a sua visibilidade em tempo de execução aos atributos e métodos ou não, existem essas mesmas informações para os parâmetros quanto as suas visibilidades. AnnotationDefault define as informações dentro das anotações.
+Para as anotações exitem: `RuntimeVisibleAnnotations`, `RuntimeInvisibleAnnotations`, `RuntimeVisibleParameterAnnotations`, `RuntimeInvisibleParameterAnnotations` que contém informações das anotações quanto a sua visibilidade em tempo de execução aos atributos e métodos ou não, existem essas mesmas informações para os parâmetros quanto as suas visibilidades. `AnnotationDefault` define as informações dentro das anotações.
 
-	O contador da consant pool possui 16 bits, ou seja, ele só pode conter 2¹⁶=65535 elementos, esse mesmo número vale para o número de métodos, atributos, interfaces implementadas, variáveis locais, pilha de operações (sendo que para esses dois últimos o longo e o double ocupam dois espaços), o nome do método ou atributo. O número de dimensões de uma matriz é 255 o mesmo número vale para a quantidade de parâmetros, caso não seja um método estático deve-se incluir a instância.
+
+O contador da consant pool possui 16 bits, ou seja, ele só pode conter 2¹⁶=65535 elementos, esse mesmo número vale para o número de métodos, atributos, interfaces implementadas, variáveis locais, pilha de operações (sendo que para esses dois últimos o longo e o double ocupam dois espaços), o nome do método ou atributo. O número de dimensões de uma matriz é 255 o mesmo número vale para a quantidade de parâmetros, caso não seja um método estático deve-se incluir a instância.
 	
-	Com o objetivo de pôr em prática e visualizar esses bytescodes, será demonstrado um simples código e o seu respectivo bytecode.
+Com o objetivo de pôr em prática e visualizar esses bytescodes, será demonstrado um simples código e o seu respectivo bytecode.
