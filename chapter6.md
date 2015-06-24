@@ -2,3 +2,12 @@
 
 
 Diferente de algumas linguagens o Java possui um gerenciamento de memória automática, isso permite que a memória de um objeto não mais utilizado seja retomada, essa certamente é uma das grandes vantagem da plataforma em relação ao `C`. O primeiro desafio da JVM é identificar quais objetos dispensáveis, e assim retomar a memória com isso foi realizado várias técnicas para assim o fazer
+
+
+
+![Estilo mark and sweep, em que os objetos utilizados são marcados, os não utilizados são marcados, após esses dois passos o próximo passo será desfragmentar a memória principal.](imagens/chapter_6_1.png)
+
+
+O mais conhecido certamente é o **Mark and Sweep**, basicamente dois processos que marca os objetos utilizados e no final os objetos não marcados são dispensáveis para retomar a memória, o maior problema é que todos os processos são parados para executar tal procedimento inviabilizando chamá-lo constantemente. Em função desse problema citado anteriormente falaremos do segundo algorismo, que leva em consideração que muitos objetos não possuem uma longa vida, no entanto, alguns levam bastante tempo na memória, assim os algoritmos se baseia em gerações que divide a memória em três partes (jovem, efetiva e permanente).
+
+Para melhor gerenciar o coletor de lixo a memória heap é dividia basicamente em três partes:
