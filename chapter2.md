@@ -66,10 +66,26 @@ Sendo que os tipos numéricos são os valores inteiros e flutuantes.
 |boolean|inteiro||false|booleano|
 |returnAddress|||nulo|ponteiro|
 
-Os formatos de ponto flutuante são o `float`, com precisão simples, e o `double`, com dupla precisão. Tantos os valores como as operações seguem o especificado no padrão IEEE para aritmética de ponto flutuante binário (ANSI / IEEE. 754-1985, Nova York). Esse padrão não inclui apenas valores positivos e negativos, mas zero, positivo e negativo infinito e não um número (abreviado como Nan é utilizado para representar valores inválidos como divisão por zero). Por padrão, as JVM suportam esse formato, mas também podem suportar versões estendidas de double e float.
+Os formatos de ponto flutuante são o `float`, com precisão simples, e o `double`, com dupla precisão. Tantos os valores como as operações seguem o especificado no padrão IEEE para aritmética de ponto flutuante binário (ANSI/ IEEE. 754-1985, Nova York). Esse padrão não inclui apenas valores positivos e negativos, mas zero, positivo e negativo infinito e não um número (abreviado como **Nan** é utilizado para representar valores inválidos como divisão por zero). Por padrão, as JVM suportam esse formato, mas também podem suportar versões estendidas de `double` e `float`.
 
-	O returnAdress é usado apenas pela JVM, não possui representação na linguagem, tem seu funcionamento similar a ponteiros e diferentes dos tipos primitivos não podem ser modificados em tempo de execução.
+O **returnAdress** é usado apenas pela JVM, não possui representação na linguagem, tem seu funcionamento similar a ponteiros e diferentes dos tipos primitivos não podem ser modificados em tempo de execução.
 
-	Na JVM o tipo booleano possui um suporte bem limitado, não existem instruções para booleano, na verdade eles são compilados para usar os tipos de instruções do int e o array de booleano são manipulados como array de byte. Os valores são representados com 1 para verdadeiro e 0 para falso.
+Na JVM o tipo booleano possui um suporte bem limitado, não existem instruções para booleano, na verdade, eles são compilados para usar os tipos de instruções do `int` e o array de booleano são manipulados como `array` de `byte`. Os valores são representados com `1` para verdadeiro e `0` para falso.
 
-	Falando um pouco sobre o tipo de referência, existem três tipos: classes, array e interfaces todas são instanciadas dinamicamente. Um array é uma matriz simples ou vetor cujo o seu tamanho não é definido pelo seu tipo. 
+Falando um pouco sobre o tipo de referência, existem três tipos: 
+
+1. 
+classes
+1. 
+array
+1. 
+interfaces
+
+
+O Valor de referência é iniciado como `null`, o nulo não é um tipo definido, mas pode ser feito cast para qualquer tipo de referência.
+	
+Recapitulando, existem basicamente dois tipos de dados:
+
+* Primitivos e Referência. 
+* As referências possuem os seus subtipos: classe, interface e array.
+* Os primitivos possuem returnAdress, booleano, flutuantes (float e double de dupla e simples precisão respectivamente), inteiros (short, byte, int, long, char).
