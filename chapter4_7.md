@@ -27,7 +27,9 @@ O maior e menor número da versão do arquivo class que juntos definem a versão
 * **ACC_SYNTHETIC**: indica que o método não é “original”
 
 
-4) this_class: o valor da corrente classe deve ter um índice válido na constant pool
+
+1. 
+this_class: o valor da corrente classe deve ter um índice válido na constant pool
  
 5) super_class: as informações da superclasse devem estar dentro e pode ocupar o índice zero ou não, se ocupar o índice zero essa classe é o java.lang.Object, a única classe que não possui pai, do contrário terá que ser um índice válido e ter informações que apontam para a classe pai. As informações da classe é definida pelo seu nome com o seu caminho, por exemplo, a nome da String seria java/lang/String.
 
