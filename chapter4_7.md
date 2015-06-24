@@ -51,6 +51,7 @@ Assim, por exemplo: `double dobro(double d)` é igual  `(D)D` e `Double dobro(Do
 
 Dentro da constant pool cada informação possui o seu primeiro byte que indica o seu tipo de informação:
 
+
   * CONSTANT_Class 7 
   * CONSTANT_Fieldref 9 
   * CONSTANT_Methodref 10 
