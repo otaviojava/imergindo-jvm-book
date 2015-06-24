@@ -25,3 +25,6 @@ Na JVM existem múltiplos classe loaders com diferentes regras, assim podemos cl
 ![Hierarquia dos Class Loaders](imagens/chapter_5_2.png)
 
 
+Após a classe ser carregada o próximo passo será linkar para JVM, esse processo consiste na verificação da classe recém-carregada, ele verifica a palavra-chave, se a estrutura está correta, o tamanho dos arquivos, após a verificação são alocadas memórias para os atributos e serão setados os valores padrão dos campos, são carregados os atributos estáticos, encerrando esse processo todos os link de referência são substituídos por links diretos.
+
+No último estágio será a criada a instância com a chamada do método construtor, sendo que antes é chamado o construtor da superclasse, não existe verificação para as interfaces apenas se os métodos foram implementados.
