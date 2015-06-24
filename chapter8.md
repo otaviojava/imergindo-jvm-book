@@ -20,3 +20,5 @@ Várias empresas fazem parte desse projeto, ou seja, é uma JVM com o Know-how d
 
 1. 
 Se a Oracle deixar o Java (Algo que eu acho muito difícil por diversos motivos) e deixar de fazer a JVM. O OpenJDK não será em nenhum momento abalado já que existem outras empresas apoiando além da comunidade.
+
+![Merge OpenJDK Hotsopt](imagens/chapter_8_1.png)
