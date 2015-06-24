@@ -1,0 +1,4 @@
+### Interface Nativa Java
+
+
+Muito se fala do Java, principalmente do fato dele ser multiplataforma, talvez essa característica em especial, de se compilar uma vez e poder rodar em diversas plataformas, tornou o Java a linguagem e plataforma mais popular no mundo. Muito se tem explorado já que toda a complexidade é feita pela JVM, mas surge a seguinte dúvida: Como a JVM faz isso? Como ela conseguir abstrair as outras plataformas para min? Obter esse conhecimento é muito importante uma vez que pode ser necessário utilizar um recurso específico da máquina e fazer com esse recurso converse diretamente com a JVM.
