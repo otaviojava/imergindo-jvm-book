@@ -37,3 +37,8 @@
   * [Chamada de métodos e retorno de valores](chapter4_6.md)
   * [Classes após compilação](chapter4_7.md)
 * [Ciclo de vida de uma classe](chapter5.md)
+* [Garbage Collector](chapter6.md)
+  * [Implementação Serial](chapter6_1.md)
+  * [Implementação Paralelo](chapter6_2.md)
+  * [Implementação Concurrent](chapter6_3.md)
+  * [Implementação Concurrent](chapter6_3.md)
