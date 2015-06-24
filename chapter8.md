@@ -40,3 +40,6 @@ Para baixar o código é necessário:
 * `cd jdk8` (entrando no diretório, onde se encontra o código fonte).
 
 * `sh get_source.sh` (shell script para baixar o código fonte dos módulos da JVM).
+ 
+Ao baixar o código se verá que o projeto OpenJDK é composto por subprojetos:
+
