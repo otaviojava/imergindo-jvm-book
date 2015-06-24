@@ -21,3 +21,5 @@
       * [Stack variables](chapter3_2_1_1.md)
       * [Stack Operand](chapter3_2_1_2.md)
       * [Frame Data](chapter3_2_1_3.md)
+  * [Native Method Stacks](chapter3_3.md)
+  * [Native Method Stacks](chapter3_3.md)
