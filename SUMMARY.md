@@ -44,3 +44,4 @@
   * [Implementação Incremental Concurrent](chapter6_4.md)
   * [Implementação Garbage First](chapter6_5.md)
 * [Interface Nativa Java](chapter7.md)
+* [O projeto OpenJDK](chapter8.md)
