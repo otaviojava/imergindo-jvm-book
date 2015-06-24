@@ -14,6 +14,3 @@ Com o codinome **Dolphin** possui o maior número de atualização no Java. Foi 
 * mult-try
 * Novo pacote utilitário de concorrência: JSR 166
 * NIO2: novos biblioteca para IO
-
-
-	Nesse primeiro capítulo houve uma pequena introdução sobre o interior da JVM e da sua importância para a plataforma além do aspecto histórico das versões do Java e de sua evolução tanto como plataforma, linguagem e máquina virtual. 
