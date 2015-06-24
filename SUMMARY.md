@@ -41,4 +41,5 @@
   * [Implementação Serial](chapter6_1.md)
   * [Implementação Paralelo](chapter6_2.md)
   * [Implementação Concurrent](chapter6_3.md)
-  * [Implementação Concurrent](chapter6_3.md)
+  * [Implementação Incremental Concurrent](chapter6_4.md)
+  * [Implementação Garbage First](chapter6_5.md)
