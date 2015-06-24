@@ -10,3 +10,48 @@ A comunicação entre a JVM e o código nativo quase em sua grande maioria é fe
 No entanto, usar o requer algumas responsabilidades, vale lembrar que usar o JNI perde a portabilidade, um erro nativo não é controlado pela JVM (Vale lembrar na parte em que se falou de registrados, a pilha nativa e o **PC** quando aponta para um processo nativo, não se sabe o seu valor preciso), não é possível debugar o código nativo através da plataforma Java, caso acontece um erro nativo pode quebrar a execução da JVM, ele não prover um Garbage Collector automático ou qualquer gerenciamento por parte da JVM. Assim é muito importante saber o momento em que se usará o JNI.
 
 Os objetos em Java podem ser mapeados para objetos nativos e virse-versa, para garantir a comunicação de duas mãos, assim é possível estar passando um objeto Java para o lado nativo ver o seu valor.
+
+
+|Tipo em Java|Tipo Nativo|
+| -- | -- |
+|`boolean`|jboolean|
+|`byte`|jbyte|
+|`char`|jchar|
+|`double`|jdouble|
+|`float`|jfloat|
+|`int`|jint|
+|`long`|jlong|
+|`short`|jshort|
+|`void`|void|
+
+
+
+Com o objetivo de dar um pequeno exemplo com o **JNI** será mostrado dois simples exemplos, o primeiro será o *“olá mundo”* com o JNI e o segundo será um método estático que calcula o dobro do resultado passado, para isso é necessário que se tenha instalado o **GCC** e o **JDK**. O código será bem simples, no primeiro caso será enviado o nome por parâmetro e essa String será passada para o valor nativo, uma vez no nativo será concatenado o *“Hello world”* com o nome digitado, no segundo exemplo, o segundo parâmetro seria calculado o seu dobro.
+
+Primeiramente será criado a classe HelloWorld.java.
+
+
+```java
+public class HelloWorld { 
+
+	private native void chamarMensagem(String nome); 
+
+	public native static int dobrar(int valor); 
+
+	public static void main(String[] args) { 
+
+		String nome=args[0]==null?"nome":args[0]; 
+		int valor=args[1]==null?2:Integer.valueOf(args[1]); 
+
+		HelloWorld helloWorld=new HelloWorld(); 
+		helloWorld.chamarMensagem(nome); 
+
+		int resultado=HelloWorld.dobrar(valor); 
+		System.out.println("O dobro de "+valor+" é: "+ resultado); 
+	} 
+
+	static {System.loadLibrary("HelloWorld");} 
+
+}
+
+```
