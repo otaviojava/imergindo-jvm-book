@@ -158,3 +158,109 @@ Constant pool:
 
 
 Nesse primeiro resultado podemos visualizar a constant pool e a menor e a maior versão do class. O Constant Pool contém as informações da respectiva classe, já que toda classe possui essa informação, inclusive as InnerClasses, e eles são armazenadas em um vetor.
+
+
+
+```bytecode
+
+public PrimeiroTeste(); 
+    flags: ACC_PUBLIC 
+    Code: 
+      stack=1, locals=1, args_size=1 
+         0: aload_0       
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V 
+         4: return        
+      LineNumberTable: 
+        line 1: 0 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0       5     0  this   LPrimeiroTeste; 
+
+  public java.lang.Double somarInstancias(java.lang.Double, java.lang.Double); 
+    flags: ACC_PUBLIC 
+    Code: 
+      stack=4, locals=4, args_size=3 
+         0: aload_1       
+         1: invokevirtual #2                  // Method java/lang/Double.doubleValue:()D 
+         4: aload_2       
+         5: invokevirtual #2                  // Method java/lang/Double.doubleValue:()D 
+         8: dadd          
+         9: invokestatic  #3                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double; 
+        12: astore_3      
+        13: aload_3       
+        14: areturn       
+      LineNumberTable: 
+        line 5: 0 
+        line 6: 13 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0      15     0  this   LPrimeiroTeste; 
+               0      15     1     a   Ljava/lang/Double; 
+               0      15     2     b   Ljava/lang/Double; 
+              13       2     3 resultado   Ljava/lang/Double; 
+
+  public double somarDouble(double, double); 
+    flags: ACC_PUBLIC 
+    Code: 
+      stack=4, locals=5, args_size=3 
+         0: dload_1       
+         1: dload_3       
+         2: dadd          
+         3: dreturn       
+      LineNumberTable: 
+        line 10: 0 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0       4     0  this   LPrimeiroTeste; 
+               0       4     1     a   D 
+               0       4     3     b   D 
+
+  public int somarInteiros(int, int); 
+    flags: ACC_PUBLIC 
+    Code: 
+      stack=2, locals=3, args_size=3 
+         0: iload_1       
+         1: iload_2       
+         2: iadd          
+         3: ireturn       
+      LineNumberTable: 
+        line 13: 0 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0       4     0  this   LPrimeiroTeste; 
+               0       4     1     a   I 
+               0       4     2     b   I 
+
+  public short somarShort(short, byte); 
+    flags: ACC_PUBLIC 
+    Code: 
+      stack=2, locals=3, args_size=3 
+         0: iload_1       
+         1: iload_2       
+         2: iadd          
+         3: i2s           
+         4: ireturn       
+      LineNumberTable: 
+        line 17: 0 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0       5     0  this   LPrimeiroTeste; 
+               0       5     1     a   S 
+               0       5     2     b   B 
+
+  public static int somarStatic(int, int); 
+    flags: ACC_PUBLIC, ACC_STATIC 
+    Code: 
+      stack=2, locals=2, args_size=2 
+         0: iload_0       
+         1: iload_1       
+         2: iadd          
+         3: ireturn       
+      LineNumberTable: 
+        line 21: 0 
+      LocalVariableTable: 
+        Start  Length  Slot  Name   Signature 
+               0       4     0     a   I 
+               0       4     1     b   I 
+               
+```
