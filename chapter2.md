@@ -10,3 +10,11 @@ Os métodos nativos são muito interessantes para obter informações do SO send
 
 
 ![A JVM precisa ser compilada para uma plataforma específica.](imagens/chapter_2_1.png)
+
+
+
+
+O único e principal motivo da JVM é rodar o aplicativo. Quando se inicia uma execução a JVM nasce e quando a aplicação termina ela morre. É criado uma JVM para cada aplicação, ou seja, se executar três vezes o mesmo código em uma mesma máquina serão iniciadas 3 JVMs. Para rodar uma aplicação basta que sua classe possua um método público e estático com o nome main e tenha como parâmetro um vetor de `String`.
+
+
+Ao iniciar uma JVM existem alguns processos que rodam em paralelos e em backgrouns e executam diversas operações e processos para manter a JVM sempre disponível: 
