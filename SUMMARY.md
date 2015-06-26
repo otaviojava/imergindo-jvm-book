@@ -25,7 +25,6 @@
       * [Frame Data](chapter3_2_1_3.md)
   * [Native Method Stacks](chapter3_3.md)
   * [Method Area](chapter3_4.md)
-  * [Vendo os conceitos na prática](chapter3_5.md)
   * [Heap Space](chapter3_6.md)
   * [Cache de código](chapter3_7.md)
     * [Just In Time (JIT) Compilation](chapter3_7_1.md)
