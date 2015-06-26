@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+* [Crédito](credits.md)
+* [Sobre o Autor](about_me.md)
 * [Falando um pouco sobre JVM](introduction.md)
 * [Se queres prever o futuro, estuda o passado](chapter1.md)
    * [Histórico da JVM](chapter1_1.md)
