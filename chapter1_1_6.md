@@ -14,5 +14,4 @@ Com o codinome **Tiger**, foi desenvolvida na **JSR 176**, teve seu final de vid
 * Geração automática do stub para objetos RMI
 * Novo look and feel para o Swing chamado synth
 * Um pacote utilitário de concorrência (java.util.concurrent)
-* A classe Scanner 
-* Classe Scanner para analisar dados de input streams e buffers
+* A classe Scanner para analisar dados de input streams e buffers
