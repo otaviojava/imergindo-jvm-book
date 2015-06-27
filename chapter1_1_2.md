@@ -6,4 +6,4 @@
 * JavaBeans 
 * JDBC 
 * RMI 
-* Reflection que suportava apenas introspecção apenas, nenhuma modificação em tempo real era possível.
+* Reflection que suportava apenas introspecção, nenhuma modificação em tempo real era possível.
