@@ -1,4 +1,4 @@
-#### J2SE 5.0 (30 de setembro de 2004)
+#### J2SE 5.0 (30 de Septiembre del 2004)
 
 
 Com o codinome **Tiger**, foi desenvolvida na **JSR 176**, teve seu final de vida em 8 de abril de 2008 e o encerramento do suporte dia 3 de novembro de 2009. O **Tiger** adicionou significantes melhorias para a linguagem:

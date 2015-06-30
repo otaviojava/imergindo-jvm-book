@@ -1,12 +1,12 @@
-#### J2SE 1.3 (8 de maio de 2000)
+#### J2SE 1.3 (8 de Mayo del 2000)
 
 
-Com o codinome **Kestrel**, as modificações mais importantes foram:
+Con el nombre clave de **Kestrel**, las modificaciones mas importantes fueron:
 
 
-* HotSpot JVM incluído (a JVM HotSpot foi lançado em abril de 1999 para os 1,2 J2SE JVM).
-* RMI foi modificado para suportar a compatibilidade opcional com CORBA
+* HotSpot JVM incluído (un JVM HotSpot fue liberado en abril de 1999 para las versiones 1,2 J2SE JVM).
+* RMI fue modificado para soportar la compatibilidad opcional con CORBA
 * JavaSound
-* Java Naming and Directory Interface (JNDI) incluído em bibliotecas centrais
+* Java Naming and Directory Interface (JNDI) incluído en las librerías centrales.
 * Java Platform Debugger Architecture (ACDP)
-* Sintéticos classes de proxy
+* Clases Sintéticas de proxy
