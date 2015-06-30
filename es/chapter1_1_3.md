@@ -1,11 +1,11 @@
-#### J2SE 1.2 (8 de dezembro de 1998)
+#### J2SE 1.2 (8 de Diciembre de 1998)
 
 	
-Com o codinome **Plaground**. Essa e as outras versões foram denominadas de Java 2, J2SE Java 2 Platform, Standard Edition, Houve modificações significantes nessa versão triplicando o código para 1520 classes em 59 pacotes incluindo:
+Con el nombre clave **Plaground**. Esta y otras versiones fueron denominadas Java 2, J2SE Java 2 Platform, Standard Edition. Hubo cambios significativos en esta versión triplicando el código a 1520 clases en 50 paquetes. Incluye:
 
-* A palavra-chave strictfp 
-* A api do Swing foram integrados ao Core
-* Adicionando o JIT compilador
+* La palabra reservada strictfp 
+* El api de Swing fue integrado al Core
+* Se agrego el compilador JIT 
 * Java Plug-in
-* Java IDL, uma implementação CORBA IDL para interoperabilidade
+* Java IDL, una implementación de CORBA IDL para interoperabilidad
 * Collections framework 
