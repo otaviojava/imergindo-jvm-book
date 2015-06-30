@@ -1,16 +1,16 @@
-#### Java SE 7 (28 de julho de 2011)
+#### Java SE 7 (28 de Julio del 2011)
 
 	
-Com o codinome **Dolphin** possui o maior número de atualização no Java. Foi lançado no dia 7 de Julho e foi disponibilizado no dia 28 de julho do mesmo ano.
+Con el nombre clave **Dolphin** que posee el mayor número de actualizaciones en Java. Fue lanzado el día 7 de Julio y estuvo disponible el dia 28 de Julio del mismo año.
 
-* Da Vinci Machine: Suporte para linguagens dinâmicas
-* Projeto Coin
+* Da Vinci Machine: Soporte para lenguajes dinámicos
+* Proyecto Coin
 * Strings in switch
 * Automatic resource management in try-statement
 * Diamond
 * Simplified varargs 
 * Binary integer literals
-*  Numeric literals
+* Numeric literals
 * mult-try
-* Novo pacote utilitário de concorrência: JSR 166
-* NIO2: novos biblioteca para IO
+* Nuevo paquete utilitario para concourrencia: JSR 166
+* NIO2: nueva biblioteca para IO
