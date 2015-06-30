@@ -1,4 +1,5 @@
-### Histórico da JVM
+### Historia de la JVM
 
 
-Antes de se falar dos aspectos do Java, como linguagem, plataforma e máquina virtual é interessante conhecer um pouco sobre a evolução que o Java vem sofrendo. O projeto nasceu em 1995 e a partir desta data veio sofrendo constante evolução com ajuda de empresas e da comunidade.
+Antes de hablar de los aspectos de Java, como lenguaje, plataforma y maquina virtual, es interesante conocer un poco sobre la evolución que Java viene teniendo. El proyecto nació en 1995 y a partir de esa fecha viene teniendo una constante evolución con la ayuda de empresas y de su comunidad.
+
