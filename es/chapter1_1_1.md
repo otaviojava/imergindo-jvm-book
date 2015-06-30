@@ -1,6 +1,6 @@
-#### JDK Alpha e Beta (1995) 
+#### JDK Alpha y Beta (1995) 
 
-Nas versões alfas e betas se tiveram uma máquina instável.
-1.1.2 - JDK 1.0 (23 de janeiro de 1996) 
+Las versiones alfas y betas tenían una maquina inestable.
+1.1.2 - JDK 1.0 (23 de enero de 1996) 
 
-Com o código nome Oak, que também foi o primeiro nome da linguagem. Na versão 1.0.2 foi lançado a primeira versão estável.
+Con el nombre clave de Oak, que tambien fue el primer nombre del lenguaje. La versión 1.0.2 fue lanzada y se convirtió en la primera version estable.
