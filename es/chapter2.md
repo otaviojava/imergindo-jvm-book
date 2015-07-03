@@ -1,43 +1,41 @@
-## Funcionamento básico da JVM
+## Funcionamento básico de la JVM
 
 
-Este capítulo hablará un poco sobre el funcionamiento básico de la JVM, que es el corazón del lenguaje java. Este es responsable por la independencia entre las plataformas y ejecuta basicamente dos tipos de procesos:
+Este capítulo hablará un poco sobre el funcionamiento básico de la JVM, que es el corazón del lenguaje java. Ella es la responsable por la independencia entre plataformas y ejecuta basicamente dos tipos de procesos:
 
 * Lo escrito en java y que genera **bytecodes** 
 * Lo nativo que es escrito en lenguajes como C\C++ y son *linkeados* dinámicamente para una plataforma específica.
 
-Los métodos nativos son muy interesantes para obtener información del SO donde la JVM se esta ejecutando, y de donde utiliza recursos.
+Los métodos nativos son muy interesantes para obtener información del SO donde la JVM se esta ejecutando y de la cual se utiliza recursos.
 
-são muito interessantes para obter informações do SO onde a JVM está em execução, além de utilizar recursos deste. Y es sobre esta base en que a pesar que el lenguaje es **RunAnyWhere** la JVM no lo es, o sea, para cada plataforma existe una máquina virtual específica. Eso sucede, por ejemplo, para usar recursos específicos de la plataforma. Un ejemplo es que las llamadas distintas que existen para trabajar con directorios y archivos.
+Y es sobre esta base en que a pesar de que el lenguaje es **RunAnyWhere** la JVM no lo es, o sea, para cada plataforma existe una máquina virtual específica. Eso sucede, por ejemplo, para usar recursos específicos de la plataforma. Un ejemplo, son las llamadas distintas que existen para trabajar con directorios y archivos.
 
 
 ![La JVM necesita ser compilada para una plataforma específica.](imagens/chapter_2_1.png)
 
 
+El único y principal motivo de la JVM es ejecutar el aplicativo. Cuando se inicia, una ejecución nace en la JVM y cuando la aplicación termina esta muere. Se crea una JVM para cada aplicación, o sea, si se ejecuta tres veces el mismo código en una misma máquina, se inician 3 JVMs. Para ejecutar una aplicación basta que su clase posea un método público estático con el nombre de main y tenga como parámetro un array de `String`.
 
 
-El único y principal motivo de la JVM es ejecutar el aplicativo. Cuando se inicia, una ejecución nace en la JVM y cuando la aplicación termina esta muere. Se crea una JVM para cada aplicación, o sea, si se ejecuta tres veces el mismo código en una misma máquina, se iniciar 3 JVMs. Para ejecutar una aplicación basta que su clase posea un método público estático con el nombre de main y tenga como parámetro un array de `String`.
+Al iniciar una JVM existen algunos procesos que se ejecutan en paralelo y en background se ejecutan diversas operaciones y procesos para mantener a la JVM disponible:
 
 
-Al iniciar una JVM existen algunos procesos que se ejecutan en paralelo y en background se ejecutan diveras operaciones y procesos para mantener a la JVM disponible:
-
-
-* Los Timers que son responsables por los eventos que suceden periodicamente, por ejemplo, interrupciones, las cuales son usadas para organizar los procesos que suceden continuamente. 
+* Los Timers que son responsables por los eventos que suceden periodicamente, por ejemplo, las interrupciones, las cuales son usadas para organizar los procesos que suceden continuamente. 
 * Los procesos de Garbage Collector que son responsables por ejecutar las actividades del recolector de basura de la JVM.
 * Compiladores que son los responsables en transformar bytecode a código nativo.
-* Los oídores, que reciben señales (informaciones) y tienen como principal objetivo enviar esas informaciones al proceso correcto dentro de la JVM.
+* Los oídores, que reciben señales (informaciones) y tienen como principal objetivo enviar dichas informaciones al proceso correcto dentro de la JVM.
  
 
 Hablando más un poco sobre esos procesos paralelos o `Thread`, una JVM permite que múltiples procesos se ejecuten concurrentemente, esa rutina en Java está directamente relacionada con un `Thread` nativo. Tan pronto como un proceso paralelo en java nace, sus primeros paso son:
 
 
-* Asignación de memória
+* Asignación de memoria
 * Sincronización de objetos
 * Creación de registros específicos para el mismo y la asignación de un `Thread` nativo. 
  
 Cuando esa rutina genera una excepción, la parte nativa envía esa información para que la JVM se cierre. Cuando el `Thread` termina todos sus recursos específicos, tanto en Java como para la parte nativa, son entregados a la JVM.
 
-Como un lenguaje, la JVM opera em dos tipos de datos: 
+Como un lenguaje, la JVM opera con dos tipos de datos: 
 
 1. 
 Los primitivos
@@ -69,7 +67,7 @@ Siendo los tipos numéricos valores enteros o flotantes.
 |boolean|entero||false|booleano|
 |returnAddress|||nulo|puntero|
 
-Los formatos de punto flotante son `float`, con precisión simple, y `double`, con precisión doble. Tanto los valores como las operaciones siguen el estándar IEEE para aritmética de punto flotante binário (ANSI/ IEEE. 754-1985, Nueva York). Este estándar incluye valores positivos y negativos, cero, positivo y negativo infinito, y no es número (cuya abreviatura es **Nan** y es utilizado para representar valores inválidos como división por cero). Por defecto, las JVM soportan ese formato, más tambien pueden soportar versiones extendidas de `double` y `float`.
+Los formatos de punto flotante son `float`, con precisión simple, y `double`, con precisión doble. Tanto los valores como las operaciones siguen el estándar IEEE para aritmética de punto flotante binário (ANSI/ IEEE. 754-1985, Nueva York). Este estándar incluye valores positivos y negativos, cero, positivo y negativo infinito, y no es número (cuya abreviatura es **Nan** y es utilizado para representar valores inválidos como división por cero). Por defecto, las JVM soportan esos formatos, más también pueden soportar versiones extendidas de `double` y `float`.
 
 El **returnAdress** es utilizado apenas por la JVM, no posee representación en el lenguaje, tiene un funcionamiento similar a punteros y a diferencia de los tipos primitivos, no se pueden modificar en tiempo de ejecución.
 
