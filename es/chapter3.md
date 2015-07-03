@@ -1,7 +1,7 @@
-## Registradores da JVM
+## Registros de la JVM
 
 
 
-Falado um pouco sobre os tipos de dados que são armazenados na JVM e o seu tamanho. É necessário também que se tenha ciência de onde são armazenadas tais informações. A JVM usa registradores para armazenar várias coisas sendo que para todo tipo de dado existe um local específico. Durante a execução de um programa existem registrados que são compartilhados entre toda a JVM e outros que tem a visibilidade da `Thread` corrente.
+Hablaremos un poco sobre los tipos de datos que son almacenados en la JVM y de su tamaño. Es necesario también que se tenga referencia de donde son almacenadas dichas informaciones. La JVM usa registros para almacenar varias cosas teniendo para todo tipo de dato una ubicación específica. Durante la ejecución de un programa existen registros que son compartidos entre toda la JVM y otros que tienen visibilidad del `Thread` actual.
 
-![Os registradores da JVM, Method Area e o Heap são compartilhados por toda a JVM e o PC Counter, Pilha Java e a Pilha Nativa cada Thread possui a sua.](imagens/chapter_3_1.png)
+![Los registros de la JVM, Method Area y el Heap son compartidos por toda la JVM; el PC Counter, La Pila Java y la Pila Nativa si son por cada Thread](imagens/chapter_3_1.png)
