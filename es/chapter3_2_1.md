@@ -1,7 +1,7 @@
 #### Stack Frame
 
 
-O **frame** é a unidade do **Java Stack** ele é criado tão logo se cria um método e é destruído quando o método é encerrado (normalmente ou ininterrompido por uma exceção). Cada **frame** possui uma lista das variáveis locais, pilha de operações além da referência da classe corrente e do método corrente. Esse frame é dividido em três partes:
+El **frame** es una unidad del *Java Stack** que es creado inmediatamente que se crea un método y es destruido cuando el metodo acaba(normalmente o interrumpido por una excepción). Cada **frame** posee una lista de variables locales, pila de operaciones, además de la referencia de clase y método actual. El frame es dividido en tres partes:
 
 1. 
 Stack variables
