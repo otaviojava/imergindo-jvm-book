@@ -1,11 +1,11 @@
 ##### Stack Operand
 
 
-Como o nome indica, esse registrador serve para armazenar as instruções que ocorrem dentro do método, como o registrador de variáveis locais os valores são armazenados em um vetor mas seus valores recuperados pela remoção do último elemento do vetor em vez de ser pelo índice. Ele é baseado na estrutura de dados de Pilha (Primeiro a entrar último a sair). O tamanho das variáveis acontecem de maneira semelhante as variáveis locais.
+Como su nombre indica, ese registro sirve para guardar las instrucciones que ocurren al interior de un método, como el registro de variables locales, los valores son almacenados en un vector,  más sus valores son recuperados removiendo el último elemento del vector en lugar de usar el indice. Esto es basado en la estructura de datods de la Pila (Primero en entrar es el último en salir). El tamaño de las variables sucede de manera semejante a las variables locales.
 
-![Pilha de operação, semelhante ao seu “irmão”, sua unidade possui o tamanho de 32 bits, seu passo-a-passo segue o mesmo de uma pilha convencional, o ultimo que entrar será o primeiro a sair. Nesse exemplo será utilizado a soma de dois inteiros ( 10 e 20).](imagens/chapter_3_5.png)
-Pilha de operação, semelhante ao seu “irmão”, sua unidade possui o tamanho de 32 bits, seu passo-a-passo segue o mesmo de uma pilha convencional, o ultimo que entrar será o primeiro a sair. Nesse exemplo será utilizado a soma de dois inteiros (`10` e `20`).
+![Pila de operaciones, semejante a su “hermano”, su unidad posee el tamaño de 32 bits, su paso a paso sigue el estilo de una pila convencional, es decir, el último en entrar es el primero en salir. En el ejemplo se utiliza la suma de dos enteros ( 10 y 20).](imagens/chapter_3_5.png)
+Pila de operaciones, semejante a su “hermano”, su unidad posee el tamaño de 32 bits, su paso a paso sigue el estilo de una pila convencional, es decir, el último en entrar es el primero en salir. En el ejemplo se utiliza la suma de dos enteros (`10` y `20`).
 
 
-![Como a pilha de operação é composta por unidade de 32 bits, quando for double ou long ele ocupará as duas unidades seguidas, nesse exemplo são somados dois doubles ( 10.10 e 20.20)](imagens/chapter_3_6.png)
-Como a pilha de operação é composta por unidade de 32 bits, quando for `double` ou `long` ele ocupará as duas unidades seguidas, nesse exemplo são somados dois doubles (`10.10` e `20.20`)
+![Como la pila de operaciones esta compuesta por unidades de 32 bits, entonces para double y long se ocupara dos unidades contiguas, en este ejemplo se suman dos doubles ( 10.10 y 20.20)](imagens/chapter_3_6.png)
+Como la pila de operaciones esta compuesta por unidades de 32 bits, entonces para double y long se ocupara dos unidades contiguas, en este ejemplo se suman dos doubles (`10.10` y `20.20`)
