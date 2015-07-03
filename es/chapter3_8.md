@@ -1,0 +1,4 @@
+### Recapitulando
+
+
+Com isso foi falado sobre os registradores que contém na JVM, vale lembrar que algumas são exclusivas por `Threads` ou outra não. A **pilha nativa** são importantes para obter recursos da máquina, no entanto, os seus valores são indefinidos, já as **pilhas Java** são criados tão logo um método é iniciado ele é subdividido em **frames**, ambas as pilhas são particular por `Thread`. O registrador **PC** não possui informações, apenas aponta para a instrução que está sendo executada e possui uma por `Thread`. O **Heap** e o **method Area** são compartilhadas entre a JVM, todas as `Threads`, e tem a responsabilidade de armazenar a instância dos objetos e o streams e informações da classe respectivamente.

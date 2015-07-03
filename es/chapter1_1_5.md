@@ -2,17 +2,17 @@
 
 	
 
-Com o codinome **Merlin**, foi a primeira versão para a plataforma desenvolvida pelo **JCP** como a JSR 59:
+Con el nombre clave **Merlin**, fue la primera versión para la plataforma desarrollada por la **JCP** como la JSR 59, la cual incluyó:
 
 
-* A palavra-chave assert(JSR 41)
-* Expressões regulares
-* Encadeamento de exceção permite uma exceção de maior nível encapsule uma exceção de menor nível.
-* Suporte ao Protocolo de internet versão 6 (IPv6)
-* Chamadas de IO (chamado de NIO) novos Input/Output (JSR 51)
-* API de loggin (JSR 47)
-* API para ler e escrever imagens in formatos como JPED e PNG
-* Integração com o XML e XSLT (JAXP) na JSR 63
-* Novas integrações com extensões de segurança e criptografia (JCE, JSSE, JAAS).
+* La palabra-clave assert(JSR 41)
+* Expresiones regulares
+* Encadenamiento de excepciones que permiten que una excepción de mayor nível encapsule una excepción de menor nível.
+* Soporte al Protocolo de internet versión 6 (IPv6)
+* Llamadas de IO (Llamada de NIO) nuevos Input/Output (JSR 51)
+* API de login (JSR 47)
+* API para leer y escribir imagenes en formatos como JPEG y PNG
+* Integración con XML y XSLT (JAXP) en el JSR 63
+* Nuevas integraciones con extensiones de seguridad y criptografía (JCE, JSSE, JAAS).
 * Java Web Start incluído (JSR 56).
-* API de preferências  (java.util.prefs) 
+* API de preferencias  (java.util.prefs) 

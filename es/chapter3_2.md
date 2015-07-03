@@ -1,0 +1,4 @@
+### Java Stack (Java virtual machine stack)
+
+
+Assim como o **PC**, ele é um registrador privado para cada `Thread`, esse registrador armazena **frames** (que será visto a frente). Seu funcionamento é similar a linguagens clássicas como o `C`, ele serve para armazenar variáveis locais e resultados parciais, invocações e resultados dos métodos. Ele não modifica as variáveis diretamente somente inserindo e removendo frames do registrador. Tão logo a corrente `Thread` chama um método um novo frame é inserindo contado informações como parâmetros, variáveis locais, etc. Assim quando o método termina de uma maneira normal, quando acaba o método, ou por interrupção, quando ocorre uma exceção dentro do método, esse frame é descartado. O Java Stack pode ter tamanho fixo ou determinado dinamicamente.
