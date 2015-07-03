@@ -2,7 +2,7 @@
 
 
 
-Cada **frame** contém um vetor para armazenar variáveis locais e os parâmetros e esse tamanho é definido em tempo de execução. Nesse vetor as variáveis `double` e `long` ocupam dois elementos do vetor e são armazenados consequentemente. Variáveis do tipo `int` e `returnAdress` ocupam um elemento desse vetor (`byte`, `short` e `char` são convertidos para `int`). Caso o método seja da instância, não seja estático, o primeiro elemento desse vetor será ocupado pela instância que está executando esse método e em seguida os parâmetros, na ordem que foram passados. Caso o método seja da classe, o método seja estático, Não haverá referência da instância que chama o método, assim o primeiro elemento será os parâmetros.
+Cada **frame** contiene un vector para almacenar las variables locales y/o parámetros, su tamaño es definido en tiempo de ejecución. En dicho vector las variables `double` y `long` ocupan dos elementos del vector y son guardado consecutivamente. Las variables de tipo `int` y `returnAdress` ocupan un elemento del vector (`byte`, `short` y `char` son convertidos a `int`). En caso el método sea de instancia, no sea estático, el primer elemento del vector será ocupado por la instancia que está ejecutando dicho método y a continuación los parámetros, en el orden que fueron pasados. En caso el método sea de classe, el método sea estático, no habra referencia de la instancia que llama al método, de modo que el primer elemento seran los parámetros.
 
 
-![As pilhas de variáveis são compostas por índices de 32 bits, assim as variáveis do tipo double e long ocupam dois espaços contínuos e as outras variáveis apenas um.](imagens/chapter_3_4.png)
+![Las pilas de variables son compuestas por indices de 32 bits, de modo que las variables de tipo double y long ocupan dos espacios continuos y las otras variables apenas uno.](imagens/chapter_3_4.png)
