@@ -1,1 +1,1 @@
-### Vendo os conceitos na prática
+### Viendo los conceptos en la práctica

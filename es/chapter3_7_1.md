@@ -1,4 +1,4 @@
 #### Just In Time (JIT) Compilation
 
 
-O **bytecode** Java interpretado não são tão rápido quanto os códigos nativos, para cobrir esse problema de performance, a JVM verifica métodos críticos (regiões que executam constantemente, por exemplo) e compila para o código nativo. Esse código nativo será armazenado dentro do **cache de código** em uma região fora da heap. A JVM tenta escolher as regiões mais críticas para que mesmo com o gasto memória e poder computacional de compilar o código para nativo, seja uma decisão vantajosa.
+El **bytecode** Java interpretado no es tan rápido como el código nativo, y para cubrir ese problema de performance, la JVM verifica los métodos críticos (regiones que se ejecutan constantemente, por ejemplo) y compila ellos a código nativo. Ese código nativo será almacenado en el **cache de código** una región fuera del heap. La JVM escoge las regiones más críticas para que el gasto de memoria y poder computacional de compilar a código nativo, sea una decisión ventajosa.

@@ -1,26 +1,26 @@
 #### Heap Space
 
 
-Tão logo uma instância é criada, as informações do seu objeto ficam armazenados aqui, esse espaço de memória também é compartilhado entre as `Threads`. O **heap** tem seu mecanismo de reclamar memória em tempo de execução além de mover objetos evitando a fragmentação do espaço.
+Luego de que una instancia es creada, la información de su objeto es guardado aqui, y ese espacio de memoria también es compartido entre los `Threads`. El **heap** tiene un mecanismo que reclama memoria en tiempo de ejecución, moviendo los objetos  y evitando la fragmentación de espacio.
 
 
-![Representação de uma variável do tipo de referência dentro do Heap](imagens/chapter_3_8.png)
+![Representación de uma variable de tipo de referencia en el Heap](imagens/chapter_3_8.png)
 
 
-Representação de uma variável do tipo de referência dentro do **Heap** é diferente dos tipos primitivos, ele tem o seu mecanismo muito semelhante aos ponteiros do `C/C++` já que ele não possui a informação, apenas aponta para o local que o possui. O objeto de referência é constituído de dois ponteiros menores:
+La representación de una variable de tipo de referencia en el **Heap** es diferente de los tipos primitivos, ellos tienen un mecanismo muy similar a los punteros en `C/C++` ya que no poseen la información, sino que apuntan a la ubicación que posee. El objeto de referencia está constituído de dos punteros menores:
 
-* Um apontará para o pool de objetos, local aonde estão as informações.
-* O segundo apontará para o seu constant pool (que possui as informações da classe quanto aos atributos, métodos, encapsulamentos, etc.) que fica localizado no **method Area**.
+* Uno que apunta al pool de objetos, ubicación donde esta la información.
+* El segundo apuntará a su constant pool (que posee la información de la clase, sus atributos, métodos, encapsulamientos, etc.) que serán localizados en **method Area**.
 
 
 
-A representação dos vetores se comporta de forma semelhante as variáveis de referência, mas eles ganham dois campos a mais: 
+La representación de los vectores se comportan de forma similar a las variables de referencia, mas ellos tienen dos campos adicionales: 
 
 1. 
-O **tamanho**, que define o tamanho do vetor
-1. 
-Uma **lista de referência** que apontam para os objetos que estão dentro desse vetor. 
+El **tamaño**, que define el tamaño del vector
+2. 
+Una **lista de referencia** que apunta a los objetos que estan al interior del vector
 
 
-![Representação de um vetor dentro do Heap](imagens/chapter_3_9.png)
+![Representación de un vector al interior del Heap](imagens/chapter_3_9.png)
 

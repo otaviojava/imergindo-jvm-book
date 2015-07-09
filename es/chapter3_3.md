@@ -1,7 +1,7 @@
 ### Native Method Stacks
 
 
-Su principal objetivo es guardar variables y valores nativos (métodos escritos en otros lenguajes), es creado tan pronto un `Thread` es iniciado y todos los `Threads` poseen un registrador.
+Su principal objetivo es guardar variables y valores nativos (métodos escritos en otros lenguajes), es creado tan pronto un `Thread` es iniciado y todos los `Threads` poseen un registro.
 
 
 

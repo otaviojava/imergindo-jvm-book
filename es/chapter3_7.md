@@ -1,4 +1,4 @@
 ### Cache de código
 
 
-Esse registrador é usado para compilação e armazenamento dos métodos que foram compilados para o modo nativo pelo **JIT**, esse registrador é compartilhado por todas as `Threads`.
+Ese registro es usado para la compilación y almacenamiento de los métodos que fueron compilados para el modo nativo por el  **JIT**, ese registro es compartido por todos los `Threads`.
