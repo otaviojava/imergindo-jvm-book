@@ -1,16 +1,16 @@
-#### Java SE 7 (28 de Julio del 2011)
+#### Java SE 7 (28 de julio de 2011)
 
 	
-Con el nombre clave **Dolphin** que posee el mayor número de actualizaciones en Java. Fue lanzado el día 7 de Julio y estuvo disponible el dia 28 de Julio del mismo año.
+Con el codigo nombre **Dolphin** posee el mayor número de actualizaciones en Java. Fue lanzado el dia 7 de Julio y fue disponible el dia 28 de julio del mismo año.
 
-* Da Vinci Machine: Soporte para lenguajes dinámicos
+* Da Vinci Machine: Soporte para lenguajes dinamicos.
 * Proyecto Coin
-* Strings in switch
-* Automatic resource management in try-statement
+* Strings en switch
+* Automatic resource management en try-statement
 * Diamond
-* Simplified varargs 
+* Simplificados los varargs 
 * Binary integer literals
 * Numeric literals
-* mult-try
-* Nuevo paquete utilitario para concourrencia: JSR 166
+* multi-try
+* Nuevo paquete utilitario de concurrencia: JSR 166
 * NIO2: nueva biblioteca para IO

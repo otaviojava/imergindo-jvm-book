@@ -1,9 +1,9 @@
-#### JDK 1.1 (19 de Febrero de 1997)
+#### JDK 1.1 (19 de febrero de 1997)
 
 
-* Grandes mejoras y refactorizaciones en los modelos de eventos de AWT
-* Inner class agregado al lenguaje
+* Grandes mejorias y refactorizaciones en los modelos de evento de AWT
+* Inner class adicionado al lenguaje
 * JavaBeans 
 * JDBC 
 * RMI 
-* Reflection que soportaba apenas instrospección, ninguna modificación en tiempo real era posible.
+* Reflection que soportaba solo instrospección, ninguna modificación en tiempo real era posible.

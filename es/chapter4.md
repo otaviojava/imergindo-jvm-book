@@ -1,0 +1,5 @@
+### ByteCodes
+
+
+
+Uma vez teniendo noción de los registradores y donde quedan almacenados cada valor de la JVM, hablaremos un poco sobre el funcionamiento de las instrucciones, esta tiene opcode y en el tamaño de 1 byte, de ahi el **bytecode**. Cada **bytecode** representa una acción o una operación. La mayoria de las operaciones de ese código operan para un tipo específico de valor, por ejemplo, `iload` (carga un `int` para la pila) y `fload` (carga un `float` para la pila) tienen operaciones similares, no obstante, **bytecodes** diferentes. Un buen truco para saber el tipo operador es saber la letra inicial de la operación: **i** para una operación de intero, **l** para `long`, **s** para `short`, **b** para `byte`, **c** para `char`, **f** para `float`, **d** para `double` y a para referencia. 

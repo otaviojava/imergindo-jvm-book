@@ -1,14 +1,14 @@
-#### Java SE 6 (11 de Diciembre del 2006)
+#### Java SE 6 (11 de diciembre de 2006)
 
 
-Con el nombre clave **Mustangue**, en esa versión Sun substituyo el nombre “J2SE” u elimino el “.0” como número de versión. Esa versión fue desarrollada en la JSR 270.
+Con el codigo nombre **Mustangue**, en esta versión Sun sustituye el nombre “J2SE” y removió el “.0” del número de la versión. Esta versión fue desarrollada en la JSR 270.
 
-* Soporte al lenguaje de script JSR 223: Un API Genérica para integración con lenguajes scripts que fue integrado con el Mozilla JavaScript Rhino.
-* Soporte a Web Services, a través, de JAX-WS (JSR 224) 
+* Soporte el lenguaje de script JSR 223): Una API Genérica para integración con lenguajes scripts y fue incorporada la integración con Mozilla JavaScript Rhino.
+* Soporte a Web Service através de JAX-WS (JSR 224) 
 * JDBC 4.0  (JSR 221). 
-* Java Compiler API (JSR 199): un API para permitir llamar a compilación desde nuestros programas
+* Java Compiler API (JSR 199): una API para permitir llamar la compilación programando
 * JAXB  2.0
-* Mejoras en Anotaciones (JSR 269)
-* Mejoras en GUI, como SwingWorker, tabla filtrada y ordenada
-* Mejoras en JVM incluyendo: sincronizaçión y optimizaciones del compilador,
-* Mejoras en el algoritmo de recolección de basura.
+* Mejorias en las Annotations (JSR 269)
+* Mejorias en la GUI, como SwingWorker, tabla filtrada y ordenada
+* Mejorias en la JVM incluyendo: sincronización e optimizaciones del compilador,
+* Mejorias en el algoritmo del colector de basura.
