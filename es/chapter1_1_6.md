@@ -1,17 +1,17 @@
-#### J2SE 5.0 (30 de Septiembre del 2004)
+#### J2SE 5.0 (30 de setiembre de 2004)
 
 
-Con el nombre clave **Tiger**, fue desarrollado en la **JSR 176**, tuvo su fin de de vida el 8 de abril del 2008 y fin de soporte el día 3 de noviembre del 2009. En **Tiger** se agrego significativas mejoras para el lenguaje:
+Con el codigo nombre **Tiger**, fue desarrollada en la **JSR 176**, tuvo su final de vida en 8 de abril de 2008 y el cierre de soporte el dia 3 de novembro de 2009. **Tiger** adicionó significativas mejorias para el lenguaje:
 
-* Genericos:  (JSR14).
-* Anotaciones: (JSR 175)
-* Autoboxing/unboxing: Conversión automática entre los tipos primitivos y las classs encapsuladas (JSR 201).
-* Enumeraciones: (JSR 201.) 
+* Generics:  (JSR14).
+* Annotations: (JSR 175)
+* Autoboxing/unboxing: Conversión automática entre los tipos primitivos y las clases encapsuladas (JSR 201).
+* Enumerations: (JSR 201.) 
 * Varargs: 
 * for each loop
-* Correcciones para la Java Memory Model(Que define como los Threads interactúan, a través, de la memoria).
+* Correciones para Java Memory Model(Que define como Threads interactuan através de la memória).
 * Static imports 
 * Generación automática de stub para objetos RMI
-* Nuevo look and feel para Swing denominado synth
-* Un paquete utilitário de concurrencia (java.util.concurrent)
-* La classe Scanner para analizar datos de input streams y buffers
+* Nuevo look and feel para Swing llamado synth
+* Un paquete utilitario de concurrencia (java.util.concurrent)
+* La clase Scanner para analizar datos de input streams y buffers

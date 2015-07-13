@@ -1,3 +1,4 @@
+
 ## Funcionamento básico de la JVM
 
 
@@ -11,7 +12,9 @@ Los métodos nativos son muy interesantes para obtener información del SO donde
 Y es sobre esta base en que a pesar de que el lenguaje es **RunAnyWhere** la JVM no lo es, o sea, para cada plataforma existe una máquina virtual específica. Eso sucede, por ejemplo, para usar recursos específicos de la plataforma. Un ejemplo, son las llamadas distintas que existen para trabajar con directorios y archivos.
 
 
+
 ![La JVM necesita ser compilada para una plataforma específica.](imagens/chapter_2_1.png)
+
 
 
 El único y principal motivo de la JVM es ejecutar el aplicativo. Cuando se inicia, una ejecución nace en la JVM y cuando la aplicación termina esta muere. Se crea una JVM para cada aplicación, o sea, si se ejecuta tres veces el mismo código en una misma máquina, se inician 3 JVMs. Para ejecutar una aplicación basta que su clase posea un método público estático con el nombre de main y tenga como parámetro un array de `String`.
@@ -67,6 +70,7 @@ Siendo los tipos numéricos valores enteros o flotantes.
 |boolean|entero||false|booleano|
 |returnAddress|||nulo|puntero|
 
+
 Los formatos de punto flotante son `float`, con precisión simple, y `double`, con precisión doble. Tanto los valores como las operaciones siguen el estándar IEEE para aritmética de punto flotante binário (ANSI/ IEEE. 754-1985, Nueva York). Este estándar incluye valores positivos y negativos, cero, positivo y negativo infinito, y no es número (cuya abreviatura es **Nan** y es utilizado para representar valores inválidos como división por cero). Por defecto, las JVM soportan esos formatos, más también pueden soportar versiones extendidas de `double` y `float`.
 
 El **returnAdress** es utilizado apenas por la JVM, no posee representación en el lenguaje, tiene un funcionamiento similar a punteros y a diferencia de los tipos primitivos, no se pueden modificar en tiempo de ejecución.
@@ -81,6 +85,7 @@ classes
 array
 1. 
 interfaces
+
 
 
 El Valor de referência es iniciado como `null`, el nulo no es un tipo definido, mas se le puede hacer cast con cualquier tipo de referencia.

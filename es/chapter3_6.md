@@ -1,6 +1,7 @@
 #### Heap Space
 
 
+
 Luego de que una instancia es creada, la información de su objeto es guardado aqui, y ese espacio de memoria también es compartido entre los `Threads`. El **heap** tiene un mecanismo que reclama memoria en tiempo de ejecución, moviendo los objetos  y evitando la fragmentación de espacio.
 
 
@@ -23,4 +24,5 @@ Una **lista de referencia** que apunta a los objetos que estan al interior del v
 
 
 ![Representación de un vector al interior del Heap](imagens/chapter_3_9.png)
+
 

@@ -1,5 +1,6 @@
 ### Method Area
 
+
 Ese registro tiene la finalidad de guardar logicamente el stream de la clase, esa area es compartida entre todos los `Threads`. Logidamente s parte del Heap space. Por ser parte del Heap posee reconocimiento de memoria automático, Garbagge collector. Las clases contienen la siguiente información:
 
 

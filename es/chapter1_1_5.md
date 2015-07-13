@@ -1,7 +1,6 @@
-#### J2SE 1.4 (6 de Febrero del 2002)
+#### J2SE 1.4 (6 de febrero de 2002)
 
 	
-
 Con el nombre clave **Merlin**, fue la primera versión para la plataforma desarrollada por la **JCP** como la JSR 59, la cual incluyó:
 
 
