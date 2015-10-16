@@ -1,14 +1,14 @@
-#### Clases despues de la compilación
+#### Clases después de la compilación
 
 
-Una vez hablando de los **bytecodes** es interesante “tirar el gancho” y hablar como queda una clase despues de su compilación. Como ya fue dicho, despues de la compilación es generado un **bytecode**, cuyo archivo tiene una extensión .class, y cada archivo representa solo una clase. Cada archivo tiene las siguientes características:
+Al hablar de **bytecodes** es interesante “tirar el gancho” y hablar del cómo queda una clase después de su compilación. Como ya se dijo, después de la compilación es generado un **bytecode**, cuyo archivo tiene una extensión .class, y cada archivo representa solo una clase. Cada archivo tiene las siguientes características:
 
  
-* Un número mágico en hexadecimal definiendo que esa clase es un .class el valor es **0xCAFEBABE**
+* Un número mágico en hexadecimal que define que esa clase es un .class el valor es **0xCAFEBABE**
 
-* El mayor y menor número de la versión del archivo class que juntos definen la versión del archivo, o sea, JVM antes de correr se necesita verificar si la versión V que esta puede ejecutar entre: Menor Versión< V < Maior Versión.
+* El mayor y menor número de la versión del archivo class que juntos definen la versión del archivo, o sea, la JVM antes de correrla necesita verificar si la versión V que esta puede ejecutar está entre: Versión menor < V < Versión mayor.
 
-* **access_flags**: Este flag indica el tipo de encapsulamiento de la clase, metodos y de sus propiedades los flags pueden ser:
+* **access_flags**: Este flag indica el tipo de encapsulamiento de la clase, métodos y sus propiedades. Los flags pueden ser:
 
 
 * **ACC_PUBLIC**: flag método, atributos públicos
@@ -17,7 +17,7 @@ Una vez hablando de los **bytecodes** es interesante “tirar el gancho” y hab
 * **ACC_STATIC**: estático
 * **ACC_FINAL**: final
 * **ACC_SYNCHRONIZED**: indica un método sincronizado
-* **ACC_BRIDGE**: indica que el metodo fue generado por el compilador
+* **ACC_BRIDGE**: indica que el método fue generado por el compilador
 * **ACC_VARARGS**: indica que es varags 
 * **ACC_NATIVE**: nativo
 * **ACC_ABSTRACT**: abstracto
@@ -26,13 +26,13 @@ Una vez hablando de los **bytecodes** es interesante “tirar el gancho” y hab
 
 
 . 
-* **this_class**: el valor de la clase actual debe tener un indice válido en la constant pool
+* **this_class**: el valor de la clase actual debe tener un índice válido en la *constant pool*
  
-* **super_class**: las informaciones de la superclase deben estar dentro y puede ocupar el índice cero o no, si ocupa el indice cero esa clase es java.lang.Object, la única clase que no tiene padre, de otra manera tendrá que ser un indice válido y tener informaciones que apuntan para la clase padre. Las informaciones de la clase es definida por su nombre con su ruta, por ejemplo, el nombre de String seria java/lang/String.
+* **super_class**: la información de la superclase debe estar dentro y puede ocupar el índice cero o no, si ocupa el índice cero esa clase es java.lang.Object, la única clase que no tiene padre, de otra manera tendrá que ser un índice válido y tener informaciones que apuntan para la clase padre. Las informaciones de la clase es definida por su nombre con su ruta, por ejemplo, el nombre de String seria java/lang/String.
 
-* **constant pool**: El constant pool es una estructura de tabla que contiene el nombre de las clases, interfaces, metodos, atributos y otras informaciones de las clases. Para guardar esas informaciones existen dos registadores para cada información importante: El vector con las informaciones de la clase, metodo, o atributos y su contador o índice que funciona como limitador del vector. Este es el caso de las interfaces que la clase implementa, atributos, metodos que tienen sus respectivos vector e índices.
+* **constant pool**: El constant pool es una estructura de tabla que contiene el nombre de las clases, interfaces, métodos, atributos y otras informaciones de las clases. Para guardar esas informaciones existen dos registos para cada información importante: El vector con información de la clase, método, o atributos y su contador o índice que funciona como limitador del vector. Este es el caso de las interfaces que la clase implementa, atributos, métodos que tienen sus respectivos vector e índices.
 
-* Las descripciones de los atributos o de los parametros en un método como su tipo es definido a seguir:
+* Las descripciones de los atributos o de los parámetros en un método como su tipo es definido a continuación:
 
   * B byte signed byte 
   * C char 
@@ -40,7 +40,7 @@ Una vez hablando de los **bytecodes** es interesante “tirar el gancho” y hab
   * F float 
   * I int 
   * J long 
-  * L Classname ; referencia 
+  * L Classname; referencia 
   * S short
   * Z boolean 
   * [ referencia de un vector 
@@ -49,7 +49,7 @@ Una vez hablando de los **bytecodes** es interesante “tirar el gancho” y hab
 
 Asi, por ejemplo: `double dobro(double d)` es igual  `(D)D` y `Double dobro(Double d)` es `(Ljava/lang/Double;)Ljava/lang/Double`.
 
-Dentro del constant pool cada información tiene su primero byte que indica su tipo de información:
+Dentro del *constant pool* cada información tiene su primer byte que indica su tipo de información:
 
 
   * CONSTANT_Class 7 
@@ -70,15 +70,15 @@ Dentro del constant pool cada información tiene su primero byte que indica su t
 
 
 
-**StackMapTable**: es compuesto de stackmapframe y tiene el objetivo de verificaciones para el bytecode
+**StackMapTable**: es compuesto de stackmapframe y tiene el objetivo de verificaciones para el bytecode.
 
-Para auxiliar la depuración en lenguaje Java existen algunas informaciones para depurar el código esas variables son: LocalVariableTable y LocalVariableTypeTable que define las informaciones das variables locales para el debug y LineNumberTable define la parte de bytecode y su correspondiente linea de código.
-Para las anotaciones existen: `RuntimeVisibleAnnotations`, `RuntimeInvisibleAnnotations`, `RuntimeVisibleParameterAnnotations`, `RuntimeInvisibleParameterAnnotations` que contienen informaciones de las anotaciones como su visibilidad en tiempo de ejecución a los atributos y metodos o no, existen esas mismas informaciones para los parametros como sus visibilidades. `AnnotationDefault` define las informaciones dentro de las anotaciones.
+Para ayudar en la depuración en el lenguaje Java existen información para depurar el código esas variables son: LocalVariableTable y LocalVariableTypeTable que define las información de variables locales para el debug y LineNumberTable define la parte de bytecode y su correspondiente linea de código.
+Para las anotaciones existen: `RuntimeVisibleAnnotations`, `RuntimeInvisibleAnnotations`, `RuntimeVisibleParameterAnnotations`, `RuntimeInvisibleParameterAnnotations` que contienen información de las anotaciones como su visibilidad en tiempo de ejecución a los atributos y métodos o no, existen esas mismas informaciones para los parámetros como sus visibilidades. `AnnotationDefault` define las informaciones dentro de las anotaciones.
 
 
-El contador de constant pool posee 16 bits, o sea, este solo puede contener 2¹⁶=65535 elementos, ese mismo número vale para el número de metodos, atributos, interfaces implementadas, variables locales, pila de operaciones (en que lugar para esos dos ultimos es largo y el double ocupan dos espacios), el nombre del método o atributo. El número de dimensiones de una matriz es 255 el mismo número vale para la cantidad de parametros, en caso no sea un método estático se debe incluir la instancia.
+El contador de *constant pool* posee 16 bits, o sea, este solo puede contener 2¹⁶=65535 elementos, ese mismo número vale para el número de métodos, atributos, interfaces implementadas, variables locales, pila de operaciones (en que lugar para esos dos últimos `long` y `double` ocupan dos espacios), el nombre del método o atributo. El número de dimensiones de una matriz es 255 el mismo número vale para la cantidad de parámetros, en caso no sea un método estático se debe incluir la instancia.
 	
-Con el objetivo de poner en practica y visualizar esos **bytescodes**, será demostrado un simple código y su respectivo bytecode.
+Con el objetivo de poner en práctica y visualizar esos **bytescodes**, será muestra un código simple y su respectivo bytecode.
 
 
 ```java 
@@ -109,7 +109,7 @@ public static int sumarStatic(int a, int b) {
 ```
 
 
-Creado el archivo PrimerTest.java e insertado el código 1 en ese archivo, los próximos pasos serán entrar por el terminal en la ruta que se encontra el archivo PrimerTest.java, compilar y analizar su respectivo byte code con los siguientes comandos.
+Creado el archivo PrimerTest.java e insertado el código 1 en ese archivo, los próximos pasos serán entrar por el terminal en la ruta que se encuentra el archivo PrimerTest.java, compilar y analizar su respectivo bytecode con los siguientes comandos.
 
 * `javac PrimerTest.java`
 * `javap -verbose PrimerTest`
@@ -266,10 +266,10 @@ public PrimerTest();
 ```
 
 
-Cuando vemos los metodos podemos percibir que todos los metodos tienen el tamaño de la pila de operación y de variables ademas del tamaño de las variables implicadas en un determinado metodo. 
+Cuando vemos los metodos podemos percibir que todos los métodos tienen el tamaño de la pila de operación y de variables además del tamaño de las variables implicadas en un determinado método. 
 
-En el primero que es el método constructor, ese metodo es construido automaticamente caso no sea hecho por el usuario, este tiene 1 tamaño de operación, ya que se trata de la creación de un objeto del tipo referencia y este ocupa un espacio en el vector de operación, 1 en el tamaño de variable, ya que este es un método no estático y esas informaciones pertenece a la interface que la está llamando y el número de variables utilizadas es de uno ya que nos estamos refiriendo a la instancia creada. 
-En el segundo método, la suma de las instancias y retorna una tercera instancia, `(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/Double`, este tiene el tamaño de tres en la pila de variables, una para las dos variables de referencia y una para método y de las instancias, cuatro en el tamaño de pila de operaciones, ya que en el proceso los Doubles serán transformados en double primitivo, asi cada uno ocupará dos unidades en el vector. El campo `LineNumberTable` es para ayudar a debuggear el código en un determinado método, `LineNumberTable` 5: 0, dice que la linea de número cinco del código java equivale a la instrucción del comienzo, linea cero del **bytecode** y linea 6: 13, la linea seis del código java comienza en la instrucción del **bytecode** número 13. El campo `LocalVariableTable` tambien sirve para debuggear y define el nombre del campo, tipo, linea en la que nace y que muere. Eso demuestra como es diferente el código Java y el **byteCode** generado.
+En el primero que es el método constructor, ese método es construido automáticamente en caso no se haya hecho por el usuario, este tiene tamaño 1 de operación, ya que se trata de la creación de un objeto del tipo referencia y este ocupa un espacio en el vector de operación, 1 en el tamaño de variable, ya que este es un método no estático y esa información pertenece a la interface que la está llamando y el número de variables utilizadas es de uno ya que nos estamos refiriendo a la instancia creada. 
+En el segundo método, la suma de las instancias y retorna una tercera instancia, `(Ljava/lang/Double;Ljava/lang/Double;)Ljava/lang/Double`, este tiene el tamaño de tres en la pila de variables, una para las dos variables de referencia y una para método y de las instancias, cuatro en el tamaño de pila de operaciones, ya que en el proceso los Doubles serán transformados en double primitivo, así cada uno ocupará dos unidades en el vector. El campo `LineNumberTable` es para ayudar a debuggear el código en un determinado método, `LineNumberTable` 5: 0, dice que la línea de número cinco del código Java equivale a la instrucción del comienzo, linea cero del **bytecode** y linea 6: 13, la línea seis del código Java comienza en la instrucción del **bytecode** número 13. El campo `LocalVariableTable` tambien sirve para debuggear y define el nombre del campo, tipo, linea en la que nace y que muere. Eso demuestra cómo es diferente el código Java y el **byteCode** generado.
 
 
-En este capítulo hablamos un poco sobre **bytecode** y el truco para entenderlo, mirando por los inicios en comando, cabe recordar que durante la ejecución los booleanos, byte, shorts son transformados para enteros. Se demostró cuan diferente es el código Java del bytecode generado y en función de eso se creó tablas y variables, por ejemplo, LocalVariable y LineNumberTable para auxiliar en la hora de debuggear, esas variables son utilizadas por el modo debug de las IDEs modernas.
+En este capítulo hablamos un poco sobre **bytecode** y el truco para entenderlo, mirando por los inicios en comando, cabe recordar que durante la ejecución los booleanos, byte, shorts son transformados en enteros. Se demostró cuan diferente es el código Java del bytecode generado y en función de eso se creó tablas y variables, por ejemplo, LocalVariable y LineNumberTable para auxiliar a la hora de debuggear, esas variables son utilizadas por el modo debug de las IDEs modernas.
