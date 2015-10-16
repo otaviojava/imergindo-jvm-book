@@ -1,4 +1,4 @@
 ##### Frame Data
 
 
-Este pequeño registrador posee el link del pool de constantes de la clase que lo tiene y el actual metodo que está siendo ejecutado.
+Este pequeño registro tiene el link del pool de constantes de la clase que lo tiene y el método que está siendo ejecutado.
