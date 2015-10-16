@@ -36,10 +36,8 @@ Quando essa rotina gera uma exceção a parte nativa envia essa informação par
 
 Como na linguagem, a JVM opera em dois tipos de dados: 
 
-1. 
-Os primitivos
-1. 
-Os valores de referência. 
+1. Os primitivos
+2. Os valores de referência. 
 
 
 A JVM espera que toda a verificação quanto ao tipo tenha sido feito no momento da execução, sendo que os tipos primitivos não precisão de tal verificação ou inspeção já que eles operam com um tipo específico de instrução (por exemplo: iadd, ladd, fadd, e dadd para inteiro, long, float e double respectivamente).
@@ -74,12 +72,9 @@ Na JVM o tipo booleano possui um suporte bem limitado, não existem instruções
 
 Falando um pouco sobre o tipo de referência, existem três tipos: 
 
-1. 
-classes
-1. 
-array
-1. 
-interfaces
+1. classes
+2. array
+3. interfaces
 
 
 O Valor de referência é iniciado como `null`, o nulo não é um tipo definido, mas pode ser feito cast para qualquer tipo de referência.
