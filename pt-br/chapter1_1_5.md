@@ -11,7 +11,7 @@ Com o codinome **Merlin**, foi a primeira versão para a plataforma desenvolvida
 * Suporte ao Protocolo de internet versão 6 (IPv6)
 * Chamadas de IO (chamado de NIO) novos Input/Output (JSR 51)
 * API de loggin (JSR 47)
-* API para ler e escrever imagens in formatos como JPED e PNG
+* API para ler e escrever imagens in formatos como JPEG e PNG
 * Integração com o XML e XSLT (JAXP) na JSR 63
 * Novas integrações com extensões de segurança e criptografia (JCE, JSSE, JAAS).
 * Java Web Start incluído (JSR 56).
