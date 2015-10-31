@@ -10,8 +10,8 @@ Con el pseudónimo **Tiger**, fue desarrollada en la **JSR 176**, tuvo su final 
 * Varargs: 
 * El bucle  for each
 * Correciones para Java Memory Model (Que define cómo interactúan los threads en memoria).
-* Static imports 
+* import static
 * Generación automática de stub para objetos RMI
-* Nuevo look and feel para Swing llamado synth
-* Un paquete utilitario de concurrencia (java.util.concurrent)
-* La clase Scanner para analizar datos de input streams y buffers
+* Nuevo *look and feel* para Swing llamado *synth*
+* Paquete utilitario de concurrencia (java.util.concurrent)
+* La clase Scanner para obtener datos del *input stream* y *buffers*
