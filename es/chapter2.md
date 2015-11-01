@@ -1,9 +1,9 @@
 ## Funcionamento básico de la JVM
 
 
-Este capítulo hablará un poco sobre el funcionamiento básico de la JVM, que es el corazón del lenguaje Java. Es la responsable por la independencia entre las plataformas y corre basicamente dos tipos de procesos: 
+Este capítulo hablará un poco sobre el funcionamiento básico de la JVM, que es el corazón del lenguaje Java. Es la responsable por la independencia entre las plataformas y corre básicamente dos tipos de procesos: 
 
-* Los escritos en java que son **bytecodes** generados.
+* Los escritos en Java que son **bytecodes** generados.
 * Los nativos que son escritos en lenguajes como C/C++ y *enlazados* dinámicamente para una plataforma específica.
 
 Los métodos nativos son muy interesantes para obtener información del SO donde la JVM está en ejecución, además de utilizar recursos de este. Y es en función de eso que a pesar de ser un lenguaje **RunAnyWhere** la JVM no lo es, es decir, para cada plataforma existe una máquina virtual específica. Esto sucede, por ejemplo, para usar recursos específicos de la plataforma donde, por ejemplo, existen llamadas distintas para trabajar con directorios y archivos.
@@ -20,9 +20,9 @@ Al iniciar una JVM existen algunos procesos que corren en paralelo y en segundo 
 
 
 * Los Timers que son responsables por los eventos que suceden periódicamente, por ejemplo, interrupciones, estos son usados para organizar los procesos que ocurren continuamente. 
-* Los procesos de Garbage Collector que son responsables de ejecutar las actividades del Garbage Collector de la JVM.
+* Los procesos *Garbage Collector* que son responsables de ejecutar las actividades del Garbage Collector de la JVM.
 * Compiladores que son responsables por transformar bytecode en código nativo.
-* Los listeners, que reciben señales (informaciones) y tiene como principal objetivo enviar esas informaciones al proceso correcto dentro de la JVM.
+* Los *listeners*, que reciben señales (información) y tiene como principal objetivo enviar esa información al proceso correcto dentro de la JVM.
  
 
 Hablando un poco más sobre esos procesos paralelos o `Threads`, la JVM permite que múltiples procesos se ejecuten concurrentemente, esta rutina en Java está directamente relacionada con un `Thread` nativo. Tan pronto un proceso paralelo en Java nace, sus primeros pasos son:
@@ -36,7 +36,7 @@ Cuando esta rutina genera una excepción la parte nativa envía esa información
 Como en el lenguaje, la JVM opera con dos tipos de datos: 
 
 1. Los primitivos
-1. Los valores de referencia. 
+2. Los valores de referencia. 
 
 
 La JVM espera que toda la verificación como tipo haya sido realizado en tiempo de ejecución, siendo que los tipos primitivos no necesitan de tal verificación o inspección ya que ellos operan con un tipo específico de instrucción (por ejemplo: iadd, ladd, fadd, y dadd para entero, long, float y double respectivamente).
@@ -63,7 +63,7 @@ Siendo que los tipo numérico son los valores enteros y flotantes.
 |boolean|entero||false|booleano|
 |returnAddress|||nulo|puntero|
 
-Los formatos de punto flotante son `float`, con precisión simple, y `double`, con doble precisión. Tanto los valores como las operaciones siguen lo especificado en el estándar IEEE para aritmética de punto flotante binario (ANSI/ IEEE. 754-1985, New York). Este estándar no incluye solo valores positivos y negativos, más cero, infinito positivo y negativo y no un número (abreviado como **Nan** es utilizado para representar valores inválidos como división por cero). Por standard, las JVM soportan ese formato, pero tambien pueden soportar versiones extendidas como `double` y `float`.
+Los formatos de punto flotante son `float`, con precisión simple, y `double`, con doble precisión. Tanto los valores como las operaciones siguen lo especificado en el estándar IEEE para aritmética de punto flotante binario (ANSI/ IEEE. 754-1985, New York). Este estándar no incluye solo valores positivos y negativos, más cero, infinito positivo y negativo y un no numérico -Not A Number- (abreviado como **Nan** es utilizado para representar valores inválidos como división por cero). Por estándar, las JVM soportan ese formato, pero tambien pueden soportar versiones extendidas como `double` y `float`.
 
 El **returnAdress** es usado solo por la JVM, no tiene representación en el lenguaje, tiene su funcionamento similar a los punteros y diferente de los tipos primitivos no podrán ser modificados en tiempo de ejecución.
 
