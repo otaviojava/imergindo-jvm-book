@@ -9,8 +9,8 @@ Estas son realizadas con los dos primeros valores en la pila de operaciones y de
 * **resto**: irem, lrem, frem, drem. 
 * **negar**: ineg, lneg, fneg, dneg. 
 * **mover**: ishl, sidh, iushr, lshl, lshr, lushr. 
-* ***"or" *bit a bit**: ior, lor. 
-* ***"and" *bit a bit**: iand, a terra. 
-* ***"o exclusivo" *bit a bit**: ixor, lxor. 
+* **"or" bit a bit**: ior, lor. 
+* **"and" bit a bit**: iand, a terra. 
+* **"or exclusivo" bit a bit**: ixor, lxor. 
 * **incrementar variable local**: `iinc`. 
 * **comparar**: `dcmpg`, `dcmpl`, `fcmpg`, `fcmpl`, `lcmp`.
