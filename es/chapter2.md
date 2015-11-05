@@ -13,7 +13,7 @@ Los métodos nativos son muy interesantes para obtener información del SO donde
 
 
 
-El único y principal motivo de la JVM es correr el aplicativo. Cuando se inicia una ejecución la JVM nace y cuando la aplicación termina esta muere. Para cada aplicación se crea una JVM, o sea, si se ejecuta tres veces el mismo código en una misma maquina serán iniciadas 3 JVMs. Para correr una aplicación es suficiente que su clase tenga un método público y estático com el nombre main y tenga como parámetro un array de `String`.
+El único y principal motivo de la JVM es correr el aplicativo. Cuando se inicia una ejecución la JVM nace y cuando la aplicación termina esta muere. Para cada aplicación se crea una JVM, o sea, si se ejecuta tres veces el mismo código en una misma máquina serán iniciadas 3 JVMs. Para correr una aplicación es suficiente que su clase tenga un método público y estático con el nombre main y tenga como parámetro un array de `String`.
 
 
 Al iniciar una JVM existen algunos procesos que corren en paralelo y en segundo plano y ejecutan diversas operaciones y procesos para mantener a la JVM siempre disponible: 
@@ -49,7 +49,7 @@ Los tipos primitivos existentes en JVM son:
 * Booleano 
 * returnAdress
 
-Siendo que los tipo numérico son los valores enteros y flotantes.
+Los tipo numérico son los valores enteros y flotantes.
 
 |Nombre|Tamaño|variación|Valor default|Tipo|
 | -- | -- | -- | -- | -- |
@@ -61,25 +61,25 @@ Siendo que los tipo numérico son los valores enteros y flotantes.
 |float|32-bits||0|flotante|
 |double|64-bits||0|flotante|
 |boolean|entero||false|booleano|
-|returnAddress|||nulo|puntero|
+|returnAddress|||null|puntero|
 
-Los formatos de punto flotante son `float`, con precisión simple, y `double`, con doble precisión. Tanto los valores como las operaciones siguen lo especificado en el estándar IEEE para aritmética de punto flotante binario (ANSI/ IEEE. 754-1985, New York). Este estándar no incluye solo valores positivos y negativos, más cero, infinito positivo y negativo y un no numérico -Not A Number- (abreviado como **Nan** es utilizado para representar valores inválidos como división por cero). Por estándar, las JVM soportan ese formato, pero tambien pueden soportar versiones extendidas como `double` y `float`.
+Los formatos de punto flotante son `float`, con precisión simple, y `double`, con doble precisión. Tanto los valores como las operaciones siguen lo especificado en el estándar IEEE para aritmética de punto flotante binario (ANSI/ IEEE. 754-1985, New York). Este estándar no incluye solo valores positivos y negativos, más cero, infinito positivo y negativo y un no numérico -Not A Number- (abreviado como **Nan** es utilizado para representar valores no válidos como el resultado de la división por cero). Por estándar, las JVM soportan ese formato, pero tambien pueden soportar versiones extendidas como `double` y `float`.
 
 El **returnAdress** es usado solo por la JVM, no tiene representación en el lenguaje, tiene su funcionamento similar a los punteros y diferente de los tipos primitivos no podrán ser modificados en tiempo de ejecución.
 
 En la JVM el tipo booleano tiene un soporte bien limitado, no existen instrucciones para booleano, la verdad ellos son compilados para usar los tipos de instrucciones de `int` y de array de booleano son manipulados como `array` de `byte`. Los valores son representados con `1` para verdadero y `0` para falso.
 
-Hablando un poco sobre tipo de referencia, existen tres tipos: 
+Existen tres tipos de referencia: 
 
-1. classes
+1. class
 2. array
-3. interfaces
+3. interface
 
 
-El valor de referencia es iniciado como `null`, nulo no es un tipo definido, pero se puede hacer cast para cualquier tipo de referencia.
+El valor de referencia es iniciado como `null`, nulo no es un tipo definido, pero se puede hacer *cast* para cualquier tipo de referencia.
 	
 Resumiendo, existen basicamente dos tipos de datos:
 
 * Primitivos y referencias.
- * Las referencias tienen tres subtipos: clase, interface y array.
- * Los primitivos tienen returnAdress, booleano, flotantes (float y double de simple y doble precisión respectivamente), enteros (short, byte, int, long, char).
+ * Las referencias tienen tres subtipos: class, interface y array.
+ * Los primitivos tienen returnAdress, booleano, flotantes (float y double; de simple y doble precisión respectivamente), enteros (short, byte, int, long, char).
