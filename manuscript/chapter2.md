@@ -9,7 +9,7 @@ Este capítulo falará um pouco sobre o funcionamento básico da JVM, que é o c
 Os métodos nativos são muito interessantes para obter informações do SO onde a JVM está em execução, além de utilizar recursos deste. E é em função disso que apesar de a linguagem ser **RunAnyWhere** a JVM não é, ou seja, para cada plataforma existe uma máquina virtual específica. Isso acontece, por exemplo, para usar recursos específicos da plataforma onde, por exemplo, existem chamadas distintas para trabalhar com diretório e arquivos.
 
 
-![A JVM precisa ser compilada para uma plataforma específica.](imagens/chapter_2_1.png)
+![A JVM precisa ser compilada para uma plataforma específica.](chapter_2_1.png)
 
 
 
