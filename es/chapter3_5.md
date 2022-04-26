@@ -1,1 +1,0 @@
-### Viendo los conceptos en la práctica
